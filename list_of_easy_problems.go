@@ -2,6 +2,7 @@ package main
 
 import (
 	"sort"
+	"strconv"
 )
 
 func MergeArrays(arr1, arr2 []int) []int {
@@ -68,17 +69,28 @@ func deleteNode(node *ListNode) {
 	node.Next = node.Next.Next
 }
 
-func Strong(n int) string {
-	// your code here
-	if n == 1 {
-		return "STRONG!!!"
+func factorial(n int) int {
+	if n == 0 || n == 1 {
+		return 1
 	}
-	sum := 2
-	for i := 3; sum <= n; i++ {
-		if sum == n {
-			return "STRONG!!!"
-		}
-		sum *= i
+	return n * factorial(n-1)
+}
+
+func Strong(n int) string {
+
+	if n == 1 || n == 2 {
+		return "STRONG!!!!"
+	}
+
+	input_string := strconv.Itoa(n)
+	sum := 0
+	for _, v := range input_string {
+		test, _ := strconv.Atoi(string(v))
+		sum += factorial(test)
+	}
+	// your code here
+	if sum == n {
+		return "STRONG!!!!"
 	}
 	return "Not Strong !!"
 }
