@@ -22,4 +22,5 @@ func main() {
 	fmt.Println(MergeArrays([]int{8, 44, 1, 2, 3, 3, 3}, []int{4, 5, 6, 8, 9, 12}))
 	// fmt.Println(longestCommonPrefix([]string{"flower", "flow", "flight"}))
 	fmt.Println(Strong(145))
+	fmt.Println(PartList([]string{"a", "b", "c", "d"}))
 }

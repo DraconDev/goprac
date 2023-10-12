@@ -94,3 +94,22 @@ func Strong(n int) string {
 	}
 	return "Not Strong !!"
 }
+
+func PartList(arr []string) string {
+
+	result := ""
+	for j := 0; j < len(arr)-1; j++ {
+		temp := "("
+		for i, v := range arr {
+			temp += v
+			if i == j {
+				temp += ","
+			}
+			if i != len(arr)-1 {
+				temp += " "
+			}
+		}
+		result += temp + ")"
+	}
+	return result
+}
