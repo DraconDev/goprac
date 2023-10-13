@@ -143,9 +143,10 @@ func OrderedCount(text string) []Tuple {
 }
 
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
-	if head == nil {
+	if head == nil || head.Next == nil {
 		return nil
 	}
+	// find length
 	length := 1
 	temp := head
 	for temp.Next != nil {
@@ -153,11 +154,21 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 		length++
 	}
 
-	for i := 0; i < length-n; i++ {
-		if head.Next == nil {
+	// remove
+	temp = head
+	for i := 0; i < length-n-1; i++ {
+		if temp.Next == nil {
 			return head
 		}
-		head = head.Next
+		temp = temp.Next
+	}
+	if n == length {
+		return head.Next
+	}
+	if temp.Next.Next != nil {
+		temp.Next = temp.Next.Next
+	} else {
+		temp.Next = nil
 	}
 
 	return head
