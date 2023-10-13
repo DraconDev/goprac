@@ -113,3 +113,52 @@ func PartList(arr []string) string {
 	}
 	return result
 }
+
+type Tuple struct {
+	Char  rune
+	Count int
+}
+
+func OrderedCount(text string) []Tuple {
+	result := []Tuple{}
+	countMap := make(map[rune]int)
+
+	for _, v := range text {
+		countMap[v]++
+	}
+
+	for k, v := range countMap {
+		result = append(result, Tuple{k, v})
+	}
+
+	sort.Slice(result, func(i, j int) bool {
+		// if result[i].Count == result[j].Count {
+		// 	return result[i].Char < result[j].Char
+		// }
+		return result[i].Count > result[j].Count
+	})
+
+	return result
+	// Implement me! :)
+}
+
+func removeNthFromEnd(head *ListNode, n int) *ListNode {
+	if head == nil {
+		return nil
+	}
+	length := 1
+	temp := head
+	for temp.Next != nil {
+		temp = temp.Next
+		length++
+	}
+
+	for i := 0; i < length-n; i++ {
+		if head.Next == nil {
+			return head
+		}
+		head = head.Next
+	}
+
+	return head
+}
