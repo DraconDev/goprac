@@ -2,13 +2,10 @@ package main
 
 import (
 	"strings"
-
-	"golang.org/x/text/cases"
-	"golang.org/x/text/language"
 )
 
 func bandNameGenerator(word string) string {
-	caser := cases.Title(language.English)
+	// caser := cases.Title(language.English)
 	if word == "" {
 		return ""
 	}
@@ -18,6 +15,6 @@ func bandNameGenerator(word string) string {
 		return strings.ToUpper(string(word[0])) + word[1:lastIndex] + word
 	}
 
-	return "The " + caser.String(word)
-	// return "The " + strings.Title(string(word))
+	// return "The " + caser.String(word)
+	return "The " + strings.Title(string(word))
 }
