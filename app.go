@@ -1,6 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
+
+func hello() {
+	str := "Hello, 世界!"
+
+	result := strconv.QuoteToASCII(str)
+
+	fmt.Println(result)
+}
 
 func main() {
 	// fmt.Println(runningSum([]int{1, 2, 3, 4}))
@@ -30,4 +41,5 @@ func main() {
 	fmt.Println(bandNameGenerator("c-clamp"))
 	fmt.Println(bandNameGenerator("alaska"))
 	fmt.Println(reverseList(node1))
+	fmt.Println(Capitalize("hello", []int{0, 1, 2}))
 }
