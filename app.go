@@ -27,6 +27,6 @@ func main() {
 	// fmt.Println(PartList([]string{"a", "b", "c", "d"}))
 	// fmt.Println(OrderedCount("abracadabra"))
 	fmt.Println(removeNthFromEnd(node1, 2))
-	fmt.Println(bandNameGenerator("hello"))
+	fmt.Println(bandNameGenerator("c-clamp"))
 	fmt.Println(bandNameGenerator("alaska"))
 }
