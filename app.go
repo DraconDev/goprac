@@ -8,10 +8,10 @@ func main() {
 	// fmt.Println(fizzBuzz(15))
 	// println(numberOfSteps(14))
 
-	// node5 := &ListNode{Val: 5, Next: nil}
-	// node4 := &ListNode{Val: 4, Next: node5}
-	// node3 := &ListNode{Val: 3, Next: node4}
-	node2 := &ListNode{Val: 2, Next: nil}
+	node5 := &ListNode{Val: 5, Next: nil}
+	node4 := &ListNode{Val: 4, Next: node5}
+	node3 := &ListNode{Val: 3, Next: node4}
+	node2 := &ListNode{Val: 2, Next: node3}
 	node1 := &ListNode{Val: 1, Next: node2}
 
 	// node1 := &ListNode{Val: 1, Next: nil}
@@ -29,4 +29,5 @@ func main() {
 	fmt.Println(removeNthFromEnd(node1, 2))
 	fmt.Println(bandNameGenerator("c-clamp"))
 	fmt.Println(bandNameGenerator("alaska"))
+	fmt.Println(reverseList(node1))
 }
