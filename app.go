@@ -62,6 +62,9 @@ func main() {
 	// fmt.Println(Comp([]int{121, 144, 19, 161, 19, 144, 19, 11}, []int{121, 14641, 20736, 361, 25921, 361, 20736, 361}))
 	// fmt.Println(Comp([]int{2, 3, 4, 5}, []int{9, 16, 25}))
 	// fmt.Println(mergeTwoLists(node1, nodea))
-	fmt.Println(isPalindrome(121))
-	fmt.Println(isPalindrome(11))
+	// fmt.Println(isPalindrome(121))
+	// fmt.Println(isPalindrome(11))
+	// fmt.Println(isValid("(()[1]{}"))
+	// fmt.Println(isValid("()[]{}"))
+	fmt.Println(isValidBrackets("(]"))
 }

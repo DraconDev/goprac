@@ -1,7 +1,6 @@
 package main
 
 import (
-	"strconv"
 	"strings"
 )
 
@@ -126,15 +125,4 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	}
 
 	return main
-}
-
-func isPalindrome(num int) bool {
-	str := strconv.Itoa(num)
-	length := len(str)
-	for i := 0; i < length/2; i++ {
-		if str[i] != str[length-i-1] {
-			return false
-		}
-	}
-	return true
 }
