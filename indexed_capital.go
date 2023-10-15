@@ -128,17 +128,11 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	return main
 }
 
-func isPalindrome(x int) bool {
-	// word := strconv.FormatInt(int64(x), 10)
-	str := strconv.Itoa(x)
-	// if str[0] == '-' {
-	// 	return false
-	// }
-	length := len(str) / 2
-	for i := 0; i < length; i++ {
-		first := str[i]
-		second := str[len(str)-i-1]
-		if first != second {
+func isPalindrome(num int) bool {
+	str := strconv.Itoa(num)
+	length := len(str)
+	for i := 0; i < length/2; i++ {
+		if str[i] != str[length-i-1] {
 			return false
 		}
 	}
