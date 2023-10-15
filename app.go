@@ -25,6 +25,23 @@ func main() {
 	// node2 := &ListNode{Val: 2, Next: node3}
 	// node1 := &ListNode{Val: 1, Next: node2}
 
+	// noded := &ListNode{Val: 44, Next: nil}
+	// nodec := &ListNode{Val: 23, Next: noded}
+	// nodeb := &ListNode{Val: 23, Next: nodec}
+	// nodea := &ListNode{Val: 14, Next: nodeb}
+
+	node6 := &ListNode{Val: 5, Next: nil}
+	node5 := &ListNode{Val: 1, Next: node6}
+	node4 := &ListNode{Val: -4, Next: node5}
+	node3 := &ListNode{Val: -9, Next: node4}
+	node2 := &ListNode{Val: -10, Next: node3}
+	node1 := &ListNode{Val: -10, Next: node2}
+
+	// noded := &ListNode{Val: 44, Next: nil}
+	// nodec := &ListNode{Val: 4, Next: nil}
+	// nodeb := &ListNode{Val: 3, Next: nodec}
+	nodea := &ListNode{Val: -7, Next: nil}
+
 	// node1 := &ListNode{Val: 1, Next: nil}
 	// result := middleNode(node1)
 
@@ -44,4 +61,5 @@ func main() {
 	// fmt.Println(Capitalize("hello", []int{0, 1, 2}))
 	// fmt.Println(Comp([]int{121, 144, 19, 161, 19, 144, 19, 11}, []int{121, 14641, 20736, 361, 25921, 361, 20736, 361}))
 	fmt.Println(Comp([]int{2, 3, 4, 5}, []int{9, 16, 25}))
+	fmt.Println(mergeTwoLists(node1, nodea))
 }
