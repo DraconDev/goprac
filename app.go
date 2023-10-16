@@ -66,5 +66,6 @@ func main() {
 	// fmt.Println(isPalindrome(11))
 	// fmt.Println(isValid("(()[1]{}"))
 	// fmt.Println(isValid("()[]{}"))
-	fmt.Println(isValidBrackets("(]"))
+	// fmt.Println(isValidBrackets("(]"))
+	fmt.Println(CheckForFactor(4, 2))
 }
