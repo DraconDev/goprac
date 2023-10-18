@@ -72,5 +72,6 @@ func main() {
 	// fmt.Println(isPalindromeLinked(node1))
 	// fmt.Println(FreqSeq("abracadabra", "b"))
 	fmt.Println(hasCycle(node1))
+	fmt.Println(Solve("*'&ABCDabcde12345"))
 
 }
