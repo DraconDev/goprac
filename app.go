@@ -74,29 +74,29 @@ func main() {
 	// fmt.Println(hasCycle(node1))
 	// fmt.Println(Solve("*'&ABCDabcde12345"))
 
-	// root := &TreeNode{
-	// 	Val: 3,
-	// 	Left: &TreeNode{
-	// 		Val:   9,
-	// 		Left:  nil,
-	// 		Right: nil,
-	// 	},
-	// 	Right: &TreeNode{
-	// 		Val: 20,
-	// 		Left: &TreeNode{
-	// 			Val:   15,
-	// 			Left:  nil,
-	// 			Right: nil,
-	// 		},
-	// 		Right: &TreeNode{
-	// 			Val:   7,
-	// 			Left:  nil,
-	// 			Right: nil,
-	// 		},
-	// 	},
-	// }
+	root := &TreeNode{
+		Val: 3,
+		Left: &TreeNode{
+			Val:   2,
+			Left:  nil,
+			Right: nil,
+		},
+		Right: &TreeNode{
+			Val: 20,
+			Left: &TreeNode{
+				Val:   15,
+				Left:  nil,
+				Right: nil,
+			},
+			Right: &TreeNode{
+				Val:   7,
+				Left:  nil,
+				Right: nil,
+			},
+		},
+	}
 
 	// fmt.Println(maxDepthOfBinaryTree(root))
 	fmt.Println(century(2000))
-
+	fmt.Println(isValidBST(root))
 }
