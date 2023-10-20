@@ -100,5 +100,7 @@ func main() {
 	// fmt.Println(century(2000))
 	// fmt.Println(isValidBST(root))
 	// fmt.Println(Movie(500, 15, 0.9))
-	fmt.Println(Movie(20, 10, 0.5))
+	// fmt.Println(Movie(20, 10, 0.5))
+	countApplesAndOranges(7, 11, 5, 15, []int32{2, 3, 4}, []int32{5, 6})
+
 }
