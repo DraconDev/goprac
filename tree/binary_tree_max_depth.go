@@ -1,14 +1,12 @@
-package main
+package tree
 
-import "math"
+import (
+	"math"
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+	"your.module.name~/types"
+)
 
-func maxDepthOfBinaryTree(root *TreeNode) int {
+func maxDepthOfBinaryTree(root *types.TreeNode) int {
 	if root == nil {
 		return 0
 	}

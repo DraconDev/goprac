@@ -1,6 +1,6 @@
-package main
+package linkedList
 
-func isPalindromeLinked(head *ListNode) bool {
+func IsPalindromeLinked(head *ListNode) bool {
 	test := []int{}
 
 	for head != nil {

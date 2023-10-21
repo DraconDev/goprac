@@ -1,4 +1,4 @@
-package main
+package tree
 
 func isValid(root *TreeNode, min *TreeNode, max *TreeNode) bool {
 	if root == nil {

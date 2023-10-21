@@ -62,19 +62,3 @@ func numberOfSteps(num int) int {
 	return result
 }
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-func middleNode(head *ListNode) *ListNode {
-	length := 0
-	middle := head
-	for node := head; node != nil; node = node.Next {
-		length++
-		if length%2 == 0 {
-			middle = middle.Next
-		}
-	}
-	return middle
-}

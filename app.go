@@ -1,17 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"strconv"
+	"your.module.name~/tree"
 )
-
-func hello() {
-	str := "Hello, 世界!"
-
-	result := strconv.QuoteToASCII(str)
-
-	fmt.Println(result)
-}
 
 func main() {
 	// fmt.Println(runningSum([]int{1, 2, 3, 4}))
@@ -21,10 +12,12 @@ func main() {
 
 	// node5 := &ListNode{Val: 1, Next: nil}
 	// node4 := &ListNode{Val: 2, Next: node5}
-	node3 := &ListNode{Val: 3, Next: nil}
-	node2 := &ListNode{Val: 2, Next: node3}
-	node1 := &ListNode{Val: 1, Next: node2}
-	node3.Next = node1
+	// ListNode := types.ListNode{}
+
+	// node3 := &ListNode{Val: 3, Next: nil}
+	// node2 := &ListNode{Val: 2, Next: node3}
+	// node1 := &ListNode{Val: 1, Next: node2}
+	// node3.Next = node1
 
 	// noded := &ListNode{Val: 44, Next: nil}
 	// nodec := &ListNode{Val: 23, Next: noded}
@@ -74,27 +67,27 @@ func main() {
 	// fmt.Println(hasCycle(node1))
 	// fmt.Println(Solve("*'&ABCDabcde12345"))
 
-	// root := &TreeNode{
-	// 	Val: 3,
-	// 	Left: &TreeNode{
-	// 		Val:   2,
-	// 		Left:  nil,
-	// 		Right: nil,
-	// 	},
-	// 	Right: &TreeNode{
-	// 		Val: 20,
-	// 		Left: &TreeNode{
-	// 			Val:   15,
-	// 			Left:  nil,
-	// 			Right: nil,
-	// 		},
-	// 		Right: &TreeNode{
-	// 			Val:   7,
-	// 			Left:  nil,
-	// 			Right: nil,
-	// 		},
-	// 	},
-	// }
+	root := &tree.TreeNode{
+		Val: 3,
+		Left: &tree.TreeNode{
+			Val:   2,
+			Left:  nil,
+			Right: nil,
+		},
+		Right: &tree.TreeNode{
+			Val: 20,
+			Left: &tree.TreeNode{
+				Val:   15,
+				Left:  nil,
+				Right: nil,
+			},
+			Right: &tree.TreeNode{
+				Val:   7,
+				Left:  nil,
+				Right: nil,
+			},
+		},
+	}
 
 	// // fmt.Println(maxDepthOfBinaryTree(root))
 	// fmt.Println(century(2000))
@@ -103,6 +96,7 @@ func main() {
 	// fmt.Println(Movie(20, 10, 0.5))
 	// countApplesAndOranges(7, 11, 5, 15, []int32{2, 3, 4}, []int32{5, 6})
 	// fmt.Println(isSymmetric(root))
-	fmt.Println(UnluckyDays((1986)))
-
+	// fmt.Println(UnluckyDays((1986)))
+	// kata.Hello()
+	tree.LevelOrder(root)
 }

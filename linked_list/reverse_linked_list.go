@@ -1,6 +1,6 @@
-package main
+package linkedList
 
-func reverseList(head *ListNode) *ListNode {
+func ReverseList(head *ListNode) *ListNode {
 	var prev *ListNode = nil
 	for head != nil {
 		next := head.Next
