@@ -74,34 +74,35 @@ func main() {
 	// fmt.Println(hasCycle(node1))
 	// fmt.Println(Solve("*'&ABCDabcde12345"))
 
-	root := &TreeNode{
-		Val: 3,
-		Left: &TreeNode{
-			Val:   2,
-			Left:  nil,
-			Right: nil,
-		},
-		Right: &TreeNode{
-			Val: 20,
-			Left: &TreeNode{
-				Val:   15,
-				Left:  nil,
-				Right: nil,
-			},
-			Right: &TreeNode{
-				Val:   7,
-				Left:  nil,
-				Right: nil,
-			},
-		},
-	}
+	// root := &TreeNode{
+	// 	Val: 3,
+	// 	Left: &TreeNode{
+	// 		Val:   2,
+	// 		Left:  nil,
+	// 		Right: nil,
+	// 	},
+	// 	Right: &TreeNode{
+	// 		Val: 20,
+	// 		Left: &TreeNode{
+	// 			Val:   15,
+	// 			Left:  nil,
+	// 			Right: nil,
+	// 		},
+	// 		Right: &TreeNode{
+	// 			Val:   7,
+	// 			Left:  nil,
+	// 			Right: nil,
+	// 		},
+	// 	},
+	// }
 
 	// // fmt.Println(maxDepthOfBinaryTree(root))
 	// fmt.Println(century(2000))
 	// fmt.Println(isValidBST(root))
 	// fmt.Println(Movie(500, 15, 0.9))
 	// fmt.Println(Movie(20, 10, 0.5))
-	countApplesAndOranges(7, 11, 5, 15, []int32{2, 3, 4}, []int32{5, 6})
-	fmt.Println(isSymmetric(root))
+	// countApplesAndOranges(7, 11, 5, 15, []int32{2, 3, 4}, []int32{5, 6})
+	// fmt.Println(isSymmetric(root))
+	fmt.Println(UnluckyDays((1986)))
 
 }
