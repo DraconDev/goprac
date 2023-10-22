@@ -1,7 +1,7 @@
 package main
 
 import (
-	"your.module.name~/tree"
+	"your.module.name~/kata"
 )
 
 func main() {
@@ -67,28 +67,6 @@ func main() {
 	// fmt.Println(hasCycle(node1))
 	// fmt.Println(Solve("*'&ABCDabcde12345"))
 
-	root := &tree.TreeNode{
-		Val: 3,
-		Left: &tree.TreeNode{
-			Val:   2,
-			Left:  nil,
-			Right: nil,
-		},
-		Right: &tree.TreeNode{
-			Val: 20,
-			Left: &tree.TreeNode{
-				Val:   15,
-				Left:  nil,
-				Right: nil,
-			},
-			Right: &tree.TreeNode{
-				Val:   7,
-				Left:  nil,
-				Right: nil,
-			},
-		},
-	}
-
 	// // fmt.Println(maxDepthOfBinaryTree(root))
 	// fmt.Println(century(2000))
 	// fmt.Println(isValidBST(root))
@@ -98,5 +76,31 @@ func main() {
 	// fmt.Println(isSymmetric(root))
 	// fmt.Println(UnluckyDays((1986)))
 	// kata.Hello()
-	tree.LevelOrder(root)
+
+	// root := &tree.TreeNode{
+	// 	Val: 3,
+	// 	Left: &tree.TreeNode{
+	// 		Val:   2,
+	// 		Left:  nil,
+	// 		Right: nil,
+	// 	},
+	// 	Right: &tree.TreeNode{
+	// 		Val: 20,
+	// 		Left: &tree.TreeNode{
+	// 			Val:   15,
+	// 			Left:  nil,
+	// 			Right: nil,
+	// 		},
+	// 		Right: &tree.TreeNode{
+	// 			Val:   7,
+	// 			Left:  nil,
+	// 			Right: nil,
+	// 		},
+	// 	},
+	// }
+
+	// tree.LevelOrder(root)
+	test := kata.ReverseLetters("he1ll12o")
+	println(test)
+
 }
