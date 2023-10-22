@@ -1,7 +1,7 @@
 package main
 
 import (
-	"your.module.name~/kata"
+	"your.module.name~/tree"
 )
 
 func main() {
@@ -100,7 +100,8 @@ func main() {
 	// }
 
 	// tree.LevelOrder(root)
-	test := kata.ReverseLetters("he1ll12o")
-	println(test)
+	// test := kata.ReverseLetters("he1ll12o")
+	test := tree.SortedArrayToBST([]int{1, 2, 3, 4, 5})
+	println(test.Val)
 
 }
