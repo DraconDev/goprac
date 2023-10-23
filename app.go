@@ -1,10 +1,6 @@
 package main
 
-import (
-	"fmt"
-
-	"your.module.name~/kata"
-)
+import "fmt"
 
 func main() {
 	// fmt.Println(runningSum([]int{1, 2, 3, 4}))
@@ -104,11 +100,17 @@ func main() {
 	// tree.LevelOrder(root)
 	// test := kata.ReverseLetters("he1ll12o")
 	// test := tree.SortedArrayToBST([]int{1, 2, 3, 4, 5})
-	test := kata.NameValue([]string{"a   ", "codewars", "abc", "xyz"})
-	test2 := kata.NameValue([]string{"abc", "abc", "abc", "abc"})
+	// test := kata.NameValue([]string{"a   ", "codewars", "abc", "xyz"})
+	// test2 := kata.NameValue([]string{"abc", "abc", "abc", "abc"})
+	// test := Merge([]int{1, 2, 3}, 3, []int{4, 5, 6}, 3)
+	// testArr := []int{1, 2, 3, 0, 0, 0}
+	testArr := []int{0}
+	// Merge(testArr, 3, []int{4, 5, 6}, 3)
+	// Merge(testArr, 3, []int{1, 2, 3}, 3)
+	Merge(testArr, 0, []int{1}, 1)
 
 	// Prints
-	fmt.Println(test)
-	fmt.Println(test2)
+	// fmt.Println(test)
+	fmt.Println(testArr)
 
 }
