@@ -104,13 +104,13 @@ func main() {
 	// test2 := kata.NameValue([]string{"abc", "abc", "abc", "abc"})
 	// test := Merge([]int{1, 2, 3}, 3, []int{4, 5, 6}, 3)
 	// testArr := []int{1, 2, 3, 0, 0, 0}
-	testArr := []int{0}
+	// testArr := []int{0}
 	// Merge(testArr, 3, []int{4, 5, 6}, 3)
 	// Merge(testArr, 3, []int{1, 2, 3}, 3)
-	Merge(testArr, 0, []int{1}, 1)
-
+	// Merge(testArr, 0, []int{1}, 1)
+	test := firstBadVersion(5)
 	// Prints
-	// fmt.Println(test)
-	fmt.Println(testArr)
+	fmt.Println(test)
+	// fmt.Println(testArr)
 
 }
