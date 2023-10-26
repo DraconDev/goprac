@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"your.module.name~/dynamic"
+)
 
 func main() {
 	// fmt.Println(runningSum([]int{1, 2, 3, 4}))
@@ -108,8 +112,9 @@ func main() {
 	// Merge(testArr, 3, []int{4, 5, 6}, 3)
 	// Merge(testArr, 3, []int{1, 2, 3}, 3)
 	// Merge(testArr, 0, []int{1}, 1)
-	test := firstBadVersion(5)
+	// test := firstBadVersion(5)s
 	// Prints
+	test := dynamic.MaxProfit([]int{7, 1, 5, 3, 6, 4})
 	fmt.Println(test)
 	// fmt.Println(testArr)
 
