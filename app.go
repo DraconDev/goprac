@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-
-	"your.module.name~/dynamic"
 )
 
 func main() {
@@ -114,8 +112,13 @@ func main() {
 	// Merge(testArr, 0, []int{1}, 1)
 	// test := firstBadVersion(5)s
 	// Prints
-	test := dynamic.MaxProfit([]int{7, 1, 5, 3, 6, 4})
+	// test := dynamic.MaxProfit([]int{7, 1, 5, 3, 6, 4})
+	// fmt.Println(20 - 2%20)
+
+	// test := GradingStudents([]int32{23, 73, 67, 38, 33})
+	test := Kangaroo(0, 3, 4, 2)
 	fmt.Println(test)
+
 	// fmt.Println(testArr)
 
 }
