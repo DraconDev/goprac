@@ -116,7 +116,10 @@ func main() {
 	// fmt.Println(20 - 2%20)
 
 	// test := GradingStudents([]int32{23, 73, 67, 38, 33})
-	test := Kangaroo(0, 3, 4, 2)
+	// test := Kangaroo(0, 3, 4, 2)
+	// test := maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
+	test := maxSubArray([]int{8, -19, 5, -4, 20})
+	// test := maxSubArray([]int{1, 2})
 	fmt.Println(test)
 
 	// fmt.Println(testArr)
