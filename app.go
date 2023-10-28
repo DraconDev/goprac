@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"your.module.name~/dynamic"
 )
 
 func main() {
@@ -119,7 +121,10 @@ func main() {
 	// test := Kangaroo(0, 3, 4, 2)
 	// test := maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
 	// test := maxSubArray([]int{8, -19, 5, -4, 20})
-	test := maxSubArray([]int{-2, -1})
+	// test := maxSubArray([]int{-2, -1})
+	// 10, 11, 1231231231, 10000,
+	// test := rob([]int{10, 3, 5, 7, 6, 10000, 1, 2, 3, 5, 1})
+	test := dynamic.Rob([]int{2, 7, 9, 3, 1, 3})
 	// test := maxSubArray([]int{1, 2})
 	fmt.Println(test)
 
