@@ -124,7 +124,7 @@ func main() {
 	// test := maxSubArray([]int{-2, -1})
 	// 10, 11, 1231231231, 10000,
 	// test := rob([]int{10, 3, 5, 7, 6, 10000, 1, 2, 3, 5, 1})
-	test := dynamic.Rob([]int{2, 7, 9, 3, 1, 3})
+	test := dynamic.Rob([]int{2, 7, 9, 3, 1, 3, 1, 2, 4, 2, 3, 1})
 	// test := maxSubArray([]int{1, 2})
 	fmt.Println(test)
 
