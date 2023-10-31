@@ -124,7 +124,8 @@ func main() {
 	// test := rob([]int{10, 3, 5, 7, 6, 10000, 1, 2, 3, 5, 1})
 	// test := dynamic.Rob([]int{2, 7, 9, 3, 1, 3, 1, 2, 4, 2, 3, 1})
 	// test := maxSubArray([]int{1, 2})
-	test := findNumber([]int{1, 2, 3, 4, 5, 6, 7}, 5)
+	// test := findNumber([]int{1, 2, 3, 4, 5, 6, 7}, 5)
+	test := fizzBuzz2(100)
 	fmt.Println(test)
 
 	// fmt.Println(testArr)
