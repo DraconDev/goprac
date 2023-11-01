@@ -125,8 +125,11 @@ func main() {
 	// test := dynamic.Rob([]int{2, 7, 9, 3, 1, 3, 1, 2, 4, 2, 3, 1})
 	// test := maxSubArray([]int{1, 2})
 	// test := findNumber([]int{1, 2, 3, 4, 5, 6, 7}, 5)
-	test := fizzBuzz2(100)
-	fmt.Println(test)
+	// test := fizzBuzz2(100)
+	// test := tree.LevelOrder(root)
+	test2 := countPrimes(2)
+	// fmt.Println(test)
+	fmt.Println(test2)
 
 	// fmt.Println(testArr)
 
