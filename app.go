@@ -127,7 +127,7 @@ func main() {
 	// test := findNumber([]int{1, 2, 3, 4, 5, 6, 7}, 5)
 	// test := fizzBuzz2(100)
 	// test := tree.LevelOrder(root)
-	test2 := countPrimes(2)
+	test2 := countPrimes(10)
 	// fmt.Println(test)
 	fmt.Println(test2)
 
