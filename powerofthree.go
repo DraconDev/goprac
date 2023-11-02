@@ -11,6 +11,9 @@ package main
 // }
 
 func isPowerOfThree(n int) bool {
+	if n == 1 {
+		return true
+	}
 	for i := 3; i <= n; i *= 3 {
 		if i == n {
 			return true
