@@ -129,9 +129,11 @@ func main() {
 	// test := tree.LevelOrder(root)
 	// test2 := countPrimes(10)
 	//
-	test2 := isPowerOfThree(15)
+	// test2 := isPowerOfThree(15)
+	test := romanToInt("MCMXCIV")
 	// fmt.Println(test)
-	fmt.Println(test2)
+	// fmt.Println(test2)
+	fmt.Println(test)
 
 	// fmt.Println(testArr)
 
