@@ -15,3 +15,20 @@ func findNumber(nums []int, target int) int {
 	}
 	return -1
 }
+
+// func findElement(nums []int, target int) int {
+// 	var l, r = 0, len(nums) - 1
+
+// 	for l <= r {
+// 		middle := (l + r) / 2
+// 		if nums[middle] == target {
+// 			return middle
+// 		}
+// 		if nums[middle] < target {
+// 			l = middle + 1
+// 		} else {
+// 			r = middle - 1
+// 		}
+// 	}
+// 	return -1
+// }

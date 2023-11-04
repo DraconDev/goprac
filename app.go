@@ -130,7 +130,9 @@ func main() {
 	// test2 := countPrimes(10)
 	//
 	// test2 := isPowerOfThree(15)
-	test := romanToInt("MCMXCIV")
+	// test := romanToInt("MCMXCIV")
+	// test2 := findNumber([]int{1, 2, 3, 4, 5, 6, 7}, 2)
+	test := hammingWeight(uint32(00000000000000000000000000001011))
 	// fmt.Println(test)
 	// fmt.Println(test2)
 	fmt.Println(test)
