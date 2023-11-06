@@ -1,6 +1,7 @@
 package main
 
 func findNumber(nums []int, target int) int {
+	
 	left := 0
 	right := len(nums) - 1
 	for left <= right {

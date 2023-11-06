@@ -35,7 +35,7 @@ package main
 // 	}
 // 	long = long[len(long)-len(short):]
 // 	for i, v := range long {
-// 		if v != rune(short[i]) {
+// 		if v != rune(short[i]) {PASTEasd
 // 			difference++
 // 		}
 

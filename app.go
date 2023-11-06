@@ -28,6 +28,8 @@ func main() {
 	// node5 := &ListNode{Val: 1, Next: node6}
 	// node4 := &ListNode{Val: -4, Next: node5}
 	// node3 := &ListNode{Val: -9, Next: node4}
+
+	// node1 := &ListNode{Val: 1, Next: nil}
 	// node2 := &ListNode{Val: -10, Next: node3}
 	// node1 := &ListNode{Val: -10, Next: node2}
 
@@ -35,9 +37,7 @@ func main() {
 	// nodec := &ListNode{Val: 4, Next: nil}
 	// nodeb := &ListNode{Val: 3, Next: nodec}
 	// nodea := &ListNode{Val: -7, Next: nil}
-
-	// node1 := &ListNode{Val: 1, Next: nil}
-	// result := middleNode(node1)
+		// result := middleNode(node1)
 
 	// println(result.Val)
 	// fmt.Println(GetSize(4, 2, 6))
