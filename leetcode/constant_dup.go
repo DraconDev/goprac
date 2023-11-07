@@ -1,4 +1,4 @@
-package main
+package leetcode
 
 func containsDuplicate(nums []int) bool {
 	set := make(map[int]bool)
