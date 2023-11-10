@@ -1,7 +1,5 @@
 package leetcode
 
-import "sort"
-
 func Anagram(s string, t string) bool {
 	if len(s) != len(t) {
 		return false

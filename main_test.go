@@ -26,3 +26,7 @@ func TestAnagram(t *testing.T) {
 // func TestGroupAnargrams(t *testing.T) {
 // 	assert.Equal(t, leetcode.GroupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}), [][]string{{"eat", "tea", "ate"}, {"tan", "nat"}, {"bat"}})
 // }
+
+func TestProductExceptSelf(t *testing.T) {
+	assert.Equal(t, leetcode.ProductExceptSelf([]int{1, 2, 3, 4}), []int{24, 12, 8, 6})
+}
