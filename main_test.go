@@ -22,3 +22,7 @@ func TestAnagram(t *testing.T) {
 	assert.Equal(t, leetcode.Anagram("anagram", "nagoram"), false)
 	assert.Equal(t, leetcode.Anagram("anagram", "nagram"), false)
 }
+
+// func TestGroupAnargrams(t *testing.T) {
+// 	assert.Equal(t, leetcode.GroupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}), [][]string{{"eat", "tea", "ate"}, {"tan", "nat"}, {"bat"}})
+// }
