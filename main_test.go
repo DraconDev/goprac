@@ -46,3 +46,7 @@ func TestCanPlaceFlowers(t *testing.T) {
 	assert.Equal(t, leetcode.CanPlaceFlowers([]int{1, 0, 0, 0, 1}, 1), true)
 	assert.Equal(t, leetcode.CanPlaceFlowers([]int{1, 0, 0, 0, 1}, 2), false)
 }
+
+func TestLongestConsecutive(t *testing.T) {
+	assert.Equal(t, leetcode.LongestConsecutive([]int{100, 4, 200, 1, 3, 2}), 4)
+}
