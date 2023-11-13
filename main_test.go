@@ -41,3 +41,8 @@ func TestIsValidSudoku(t *testing.T) {
 		{'.', '.', '.', '.', '8', '.', '.', '7', '9'},
 	}), true)
 }
+
+func TestCanPlaceFlowers(t *testing.T) {
+	assert.Equal(t, leetcode.CanPlaceFlowers([]int{1, 0, 0, 0, 1}, 1), true)
+	assert.Equal(t, leetcode.CanPlaceFlowers([]int{1, 0, 0, 0, 1}, 2), false)
+}
