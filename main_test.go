@@ -50,3 +50,9 @@ func TestCanPlaceFlowers(t *testing.T) {
 func TestLongestConsecutive(t *testing.T) {
 	assert.Equal(t, leetcode.LongestConsecutive([]int{100, 4, 200, 1, 3, 2}), 4)
 }
+
+func TestIsPalindrome(t *testing.T) {
+	// assert.Equal(t, leetcode.IsPalindrome("A man, a plan, a canal: Panama"), true)
+	// assert.Equal(t, leetcode.IsPalindrome("race a car"), false)
+	assert.Equal(t, leetcode.IsPalindrome("0P"), false)
+}
