@@ -56,3 +56,8 @@ func TestIsPalindrome(t *testing.T) {
 	// assert.Equal(t, leetcode.IsPalindrome("race a car"), false)
 	assert.Equal(t, leetcode.IsPalindrome("0P"), false)
 }
+
+func TestReverseVowels(t *testing.T) {
+	assert.Equal(t, leetcode.ReverseVowels("hello"), "holle")
+	assert.Equal(t, leetcode.ReverseVowels("leetcode"), "leotcede")
+}
