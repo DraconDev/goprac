@@ -2,7 +2,7 @@ package leetcode
 
 import "strings"
 
-func (s string) string {
+func ReverseVowels(s string) string {
 	vowels := "aeiouAEIOU"
 	result := []rune(s)
 	l, r := 0, len(result)-1
