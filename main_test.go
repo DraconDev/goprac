@@ -69,3 +69,8 @@ func TestReverseWords(t *testing.T) {
 func TestTwoSum(t *testing.T) {
 	assert.Equal(t, leetcode.TwoSum([]int{2, 7, 11, 15}, 9), []int{1, 2})
 }
+
+func TestIncreasingTriplet(t *testing.T) {
+	// assert.Equal(t, leetcode.IncreasingTriplet([]int{1, 2, 3, 4, 5}), true)
+	assert.Equal(t, leetcode.IncreasingTriplet([]int{20,100,10,12,5,13}), false)
+}
