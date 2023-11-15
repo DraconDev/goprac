@@ -65,3 +65,7 @@ func TestReverseVowels(t *testing.T) {
 func TestReverseWords(t *testing.T) {
 	assert.Equal(t, leetcode.ReverseWords("the sky is blue"), "blue is sky the")
 }
+
+func TestTwoSum(t *testing.T) {
+	assert.Equal(t, leetcode.TwoSum([]int{2, 7, 11, 15}, 9), []int{1, 2})
+}
