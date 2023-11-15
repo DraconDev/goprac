@@ -61,3 +61,7 @@ func TestReverseVowels(t *testing.T) {
 	assert.Equal(t, leetcode.ReverseVowels("hello"), "holle")
 	assert.Equal(t, leetcode.ReverseVowels("leetcode"), "leotcede")
 }
+
+func TestReverseWords(t *testing.T) {
+	assert.Equal(t, leetcode.ReverseWords("the sky is blue"), "blue is sky the")
+}
