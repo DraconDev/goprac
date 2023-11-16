@@ -82,3 +82,9 @@ func TestStringCompress(t *testing.T) {
 	assert.Equal(t, leetcode.StringCompress([]byte{'a', 'a', 'b', 'b', 'c', 'c', 'c'}), 6)
 
 }
+
+func TestTwoSumNotSorted(t *testing.T) {
+	// assert.Equal(t, leetcode.TwoSumNotSorted([]int{2, 7, 11, 15}, 9), []int{1, 2})
+	assert.Equal(t, leetcode.TwoSumNotSorted([]int{3, 2, 4}, 6), []int{1, 2})
+	assert.Equal(t, leetcode.TwoSumNotSorted([]int{3, 3}, 6), []int{0, 1})
+}
