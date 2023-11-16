@@ -72,5 +72,13 @@ func TestTwoSum(t *testing.T) {
 
 func TestIncreasingTriplet(t *testing.T) {
 	// assert.Equal(t, leetcode.IncreasingTriplet([]int{1, 2, 3, 4, 5}), true)
-	assert.Equal(t, leetcode.IncreasingTriplet([]int{20,100,10,12,5,13}), false)
+	assert.Equal(t, leetcode.IncreasingTriplet([]int{20, 100, 10, 12, 5, 13}), false)
+}
+
+func TestStringCompress(t *testing.T) {
+
+	// assert.Equal(t, leetcode.StringCompress([]byte{'a'}), 1)
+	// assert.Equal(t, leetcode.StringCompress([]byte{'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'}), 4)
+	assert.Equal(t, leetcode.StringCompress([]byte{'a', 'a', 'b', 'b', 'c', 'c', 'c'}), 6)
+
 }
