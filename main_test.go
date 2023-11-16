@@ -88,3 +88,11 @@ func TestTwoSumNotSorted(t *testing.T) {
 	assert.Equal(t, leetcode.TwoSumNotSorted([]int{3, 2, 4}, 6), []int{1, 2})
 	assert.Equal(t, leetcode.TwoSumNotSorted([]int{3, 3}, 6), []int{0, 1})
 }
+
+func TestThreeSum(t *testing.T) {
+	// assert.Equal(t, leetcode.ThreeSum([]int{-1, 0, 1, 2, -1, -4}), [][]int{{-1, -1, 2}, {-1, 0, 1}})
+	// // * assert 4 zeros
+	// assert.Equal(t, leetcode.ThreeSum([]int{0, 0, 0, 0}), [][]int{{0, 0, 0}})
+	// * assert -2 0 0 2 2
+	assert.Equal(t, leetcode.ThreeSum([]int{-2, 0, 0, 2, 2}), [][]int{{-2, 0, 2}})
+}
