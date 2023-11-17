@@ -96,3 +96,7 @@ func TestThreeSum(t *testing.T) {
 	// * assert -2 0 0 2 2
 	assert.Equal(t, leetcode.ThreeSum([]int{-2, 0, 0, 2, 2}), [][]int{{-2, 0, 2}})
 }
+
+// func TestMoveZeroes(t *testing.T) {
+// 	assert.Equal(t, leetcode.MoveZeroes([]int{0, 1, 0, 3, 12}), []int{1, 3, 12, 0, 0})
+// }
