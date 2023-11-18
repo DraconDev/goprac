@@ -111,3 +111,7 @@ func TestIsSubsequence(t *testing.T) {
 	// assert.Equal(t, leetcode.IsSubsequence("aaaaaa", "bbaaaa"), false)
 
 }
+
+func TestTrapping_Water(t *testing.T) {
+	assert.Equal(t, leetcode.Trapping_water([]int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}), 6)
+}

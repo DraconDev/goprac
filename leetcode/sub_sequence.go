@@ -32,7 +32,7 @@ package leetcode
 // 	return false
 // }
 
-func isSubsequence(s string, t string) bool {
+func IsSubsequence(s string, t string) bool {
 	subLength := len(s)
 	j := 0
 
