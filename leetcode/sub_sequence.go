@@ -20,27 +20,27 @@ package leetcode
 // 	return false
 // }
 
-func IsSubsequence(s string, t string) bool {
-	if len(s) == 0 {
-		return true
-	}
-	for i, v := range t {
-		if v == rune(s[0]) {
-			return IsSubsequence(s[1:], t[i+1:])
-		}
-	}
-	return false
-}
-
-// func findElem(s string, t string, loop int) bool {
+// func IsSubsequence(s string, t string) bool {
+// 	if len(s) == 0 {
+// 		return true
+// 	}
 // 	for i, v := range t {
 // 		if v == rune(s[0]) {
-// 			for j := i + 1; j < len(t); j++ {
-// 				if t[j] == s[1] {
-// 					return true
-// 				}
-// 			}
+// 			return IsSubsequence(s[1:], t[i+1:])
 // 		}
 // 	}
 // 	return false
 // }
+
+func isSubsequence(s string, t string) bool {
+	subLength := len(s)
+	j := 0
+
+	for i := 0; i < len(t) && j < subLength; i++ {
+		if s[j] == t[i] {
+			j++
+		}
+	}
+
+	return j == subLength
+}
