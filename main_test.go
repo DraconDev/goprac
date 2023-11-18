@@ -104,3 +104,10 @@ func TestThreeSum(t *testing.T) {
 func TestMaxArea(t *testing.T) {
 	assert.Equal(t, leetcode.MaxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}), 49)
 }
+
+func TestIsSubsequence(t *testing.T) {
+	assert.Equal(t, leetcode.IsSubsequence("abc", "ahbgdc"), true)
+	assert.Equal(t, leetcode.IsSubsequence("axc", "ahbgdc"), false)
+	// assert.Equal(t, leetcode.IsSubsequence("aaaaaa", "bbaaaa"), false)
+
+}
