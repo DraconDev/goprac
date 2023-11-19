@@ -115,3 +115,9 @@ func TestIsSubsequence(t *testing.T) {
 func TestTrapping_Water(t *testing.T) {
 	assert.Equal(t, leetcode.Trapping_water([]int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}), 6)
 }
+
+func TestIsValidParans(t *testing.T) {
+
+	assert.Equal(t, leetcode.IsValidParans("()[]{}"), true)
+	assert.Equal(t, leetcode.IsValidParans("(]"), false)
+}
