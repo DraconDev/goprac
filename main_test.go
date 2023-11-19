@@ -121,3 +121,10 @@ func TestIsValidParans(t *testing.T) {
 	assert.Equal(t, leetcode.IsValidParans("()[]{}"), true)
 	assert.Equal(t, leetcode.IsValidParans("(]"), false)
 }
+
+func TestMaxOperations(t *testing.T) {
+	assert.Equal(t, leetcode.MaxOperations([]int{1, 2, 3, 4}, 5), 2)
+	assert.Equal(t, leetcode.MaxOperations([]int{3, 1, 3, 4, 3}, 6), 1)
+	// * testcase 2,2,2,3,1,1,4,1
+	assert.Equal(t, leetcode.MaxOperations([]int{2, 2, 2, 3, 1, 1, 4, 1}, 4), 2)
+}
