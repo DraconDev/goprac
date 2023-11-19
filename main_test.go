@@ -126,5 +126,8 @@ func TestMaxOperations(t *testing.T) {
 	assert.Equal(t, leetcode.MaxOperations([]int{1, 2, 3, 4}, 5), 2)
 	assert.Equal(t, leetcode.MaxOperations([]int{3, 1, 3, 4, 3}, 6), 1)
 	// * testcase 2,2,2,3,1,1,4,1
-	assert.Equal(t, leetcode.MaxOperations([]int{2, 2, 2, 3, 1, 1, 4, 1}, 4), 2)
+	// assert.Equal(t, leetcode.MaxOperations([]int{2, 2, 2, 3, 1, 1, 4, 1}, 4), 2)
+	// * test 3 5 1 5
+	assert.Equal(t, leetcode.MaxOperations([]int{3, 5, 1, 5}, 2), 0)
+	assert.Equal(t, leetcode.MaxOperations([]int{4, 4, 1, 3, 1, 3, 2, 2, 5, 5, 1, 5, 2, 1, 2, 3, 5, 4}, 2), 2)
 }

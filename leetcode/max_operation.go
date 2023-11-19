@@ -1,59 +1,68 @@
 package leetcode
 
-// func MaxOperations(nums []int, k int) int {
-// 	// * make hashmap of nums
-// 	numMap := make(map[int][]int)
-// 	for i, num := range nums {
-// 		numMap[num] = append(numMap[num], i)
-// 	}
-// 	operations := 0
-// 	for i, v := range nums {
-// 		if v == 0 {
-// 			continue
-// 		}
-// 		if _, ok := numMap[k-v]; ok {
-// 			if v*2 == k && len(numMap[k-v]) > 1 {
-// 				operations++
-// 				nums[numMap[k-v][0]] = 0
-// 				nums[numMap[k-v][1]] = 0
-// 				nums[numMap[k-v]] = append(nums[numMap[k-v]][:2], nums[numMap[k-v]][2:]...)
-
-// 			} else {
-// 				operations++
-// 				nums[numMap[k-v][0]] = 0
-// 				nums[i] = 0
-// 			}
-// 		}
-// 	}
-
-// 	filteredNums := nums[:0] // create a new slice with length 0
-
-// 	for _, num := range nums {
-// 		if num != 0 {
-// 			filteredNums = append(filteredNums, num)
-// 		}
-// 	}
-
-// 	nums = append([]int{}, filteredNums...)
-
-// 	return operations
-// }
-
 func MaxOperations(nums []int, k int) int {
-	if len(nums) == 0 {
-		return 0
+	// * make hashmap of nums
+	numMap := make(map[int][]int)
+	for i, num := range nums {
+		numMap[num] = append(numMap[num], i)
 	}
 	operations := 0
-	for i := 0; i < len(nums); i++ {
-		for j := i + 1; j < len(nums); j++ {
-			if nums[i]+nums[j] == k {
-				operations++
-				nums = append(nums[:i], nums[i+1:]...)
-				nums = append(nums[:j-1], nums[j:]...)
-				i--
-				break
+
+	for i := range numMap {
+		if _, ok := numMap[k-i]; ok {
+			if i*2 == k {
+				if len(numMap[k-i]) <= 1 {
+					continue
+				}
+				nums[numMap[i][0]] = 0
+				nums[numMap[k-i][1]] = 0
+				operations += len(numMap[i]) / 2
+				delete(numMap, i)
+			} else {
+				nums[numMap[i][0]] = 0
+				nums[numMap[k-i][0]] = 0
+				operations += minValue(len(numMap[i]), len(numMap[k-i]))
+				delete(numMap, k-i)
+				delete(numMap, i)
+
 			}
 		}
 	}
+	if operations == 0 {
+		return 0
+	}
+	tempArr := []int{}
+	for _, num := range nums {
+		if num != 0 {
+			tempArr = append(tempArr, num)
+		}
+	}
+	nums = append(nums[:0], tempArr...)
 	return operations
 }
+
+func minValue(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
+// func MaxOperations(nums []int, k int) int {
+// 	if len(nums) == 0 {
+// 		return 0
+// 	}
+// 	operations := 0
+// 	for i := 0; i < len(nums); i++ {
+// 		for j := i + 1; j < len(nums); j++ {
+// 			if nums[i]+nums[j] == k {
+// 				operations++
+// 				nums = append(nums[:i], nums[i+1:]...)
+// 				nums = append(nums[:j-1], nums[j:]...)
+// 				i--
+// 				break
+// 			}
+// 		}
+// 	}
+// 	return operations
+// }
