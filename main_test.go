@@ -131,3 +131,7 @@ func TestMaxOperations(t *testing.T) {
 	assert.Equal(t, leetcode.MaxOperations([]int{3, 5, 1, 5}, 2), 0)
 	assert.Equal(t, leetcode.MaxOperations([]int{4, 4, 1, 3, 1, 3, 2, 2, 5, 5, 1, 5, 2, 1, 2, 3, 5, 4}, 2), 2)
 }
+
+func TestFindMaxAverage(t *testing.T) {
+	assert.Equal(t, leetcode.FindMaxAverage([]int{1, 12, -5, -6, 50, 3}, 4), 12.75)
+}
