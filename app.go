@@ -136,7 +136,7 @@ func main() {
 	// fmt.Println(test)
 	// fmt.Println(test2)
 	// fmt.Println()
-	example.Closures()
+	example.Types_interfaces()
 	// fmt.Println(testArr)
 
 }
