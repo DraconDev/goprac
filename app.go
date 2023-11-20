@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	example "your.module.name~/go_by_example"
 )
 
 func main() {
@@ -37,7 +37,7 @@ func main() {
 	// nodec := &ListNode{Val: 4, Next: nil}
 	// nodeb := &ListNode{Val: 3, Next: nodec}
 	// nodea := &ListNode{Val: -7, Next: nil}
-		// result := middleNode(node1)
+	// result := middleNode(node1)
 
 	// println(result.Val)
 	// fmt.Println(GetSize(4, 2, 6))
@@ -132,11 +132,11 @@ func main() {
 	// test2 := isPowerOfThree(15)
 	// test := romanToInt("MCMXCIV")
 	// test2 := findNumber([]int{1, 2, 3, 4, 5, 6, 7}, 2)
-	test := hammingWeight(uint32(00000000000000000000000000001011))
+	// test := hammingWeight(uint32(00000000000000000000000000001011))
 	// fmt.Println(test)
 	// fmt.Println(test2)
-	fmt.Println(test)
-
+	// fmt.Println()
+	example.Closures()
 	// fmt.Println(testArr)
 
 }
