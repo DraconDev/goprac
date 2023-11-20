@@ -1,8 +1,6 @@
 package main
 
-import (
-	example "your.module.name~/go_by_example"
-)
+import "your.module.name~/leetcode"
 
 func main() {
 	// fmt.Println(runningSum([]int{1, 2, 3, 4}))
@@ -136,7 +134,8 @@ func main() {
 	// fmt.Println(test)
 	// fmt.Println(test2)
 	// fmt.Println()
-	example.Types_interfaces()
+	// example.MinStackConstructor()
+	leetcode.MinStackConstructor()
 	// fmt.Println(testArr)
 
 }

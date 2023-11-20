@@ -16,15 +16,15 @@ package example
 
 // type Person struct {
 // 	Name    string
-// 	Age     int
 // 	Country string
+// 	Age     int
 // }
 
 // func StructsEnums() {
 // 	p := Person{Name: "Alice", Age: 25, Country: "USA"}
-// 	fmt.Println("Name:", p.Name)
-// 	fmt.Println("Age:", p.Age)
 // 	fmt.Println("Country:", p.Country)
+// 	fmt.Println("Age:", p.Age)
+// 	fmt.Println("Name:", p.Name)
 // 	today := Sunday
 // 	fmt.Println("Today is", today)
 // }
