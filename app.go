@@ -135,7 +135,7 @@ func main() {
 	// fmt.Println(test2)
 	// fmt.Println()
 	// example.MinStackConstructor()
-	leetcode.MinStackConstructor()
+	leetcode.TestMinStackConstructor()
 	// fmt.Println(testArr)
 
 }

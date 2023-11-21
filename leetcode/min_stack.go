@@ -1,34 +1,43 @@
 package leetcode
 
+func TestMinStackConstructor() {
+	s := MinStack{}
+	s.GetMin()
+	s.Push(-2)
+	s.Push(0)
+	s.Push(-3)
+	s.GetMin()
+	s.Pop()
+	s.Top()
+	s.GetMin()
+
+}
+
 type MinStack struct {
-	stack []int
+	stack    []int
+	minStack []int
 }
 
 func MinStackConstructor() MinStack {
 	s := MinStack{}
-	// s.Push(3)
-	// s.Push(4)
-	// s.Push(2)
-	// s.Push(8)
-	// s.GetMin()
-	// s.Pop()
-	// s.GetMin()
-	// s.Pop()
-	// s.GetMin()
-	// s.Pop()
-	// s.GetMin()
-	// s.Pop()
-	// s.GetMin()
 
-	// s.Top()
 	return s
 }
 
 func (this *MinStack) Push(val int) {
 	this.stack = append(this.stack, val)
+
+	if len(this.minStack) == 0 || val <= this.GetMin() {
+		this.minStack = append(this.minStack, val)
+	}
 }
 
 func (this *MinStack) Pop() {
+
+	if this.Top() == this.GetMin() {
+		this.minStack = this.minStack[:len(this.stack)-1]
+		// this.minStack = append(this.minStack[:len(this.minStack)-1])
+	}
 	this.stack = append(this.stack[0 : len(this.stack)-1])
 
 }
@@ -39,11 +48,8 @@ func (this *MinStack) Top() int {
 }
 
 func (this *MinStack) GetMin() int {
-	min := this.stack[0]
-	for _, v := range this.stack {
-		if v < min {
-			min = v
-		}
+	if len(this.minStack) == 0 {
+		return 0
 	}
-	return min
+	return this.minStack[len(this.minStack)-1]
 }
