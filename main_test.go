@@ -139,3 +139,8 @@ func TestFindMaxAverage(t *testing.T) {
 func TestMaxVowels(t *testing.T) {
 	assert.Equal(t, leetcode.MaxVowels("leetcodeisacommunityforcoders", 4), 3)
 }
+
+func TestEvalRPN(t *testing.T) {
+	// assert.Equal(t, leetcode.EvalRPN([]string{"2", "1", "+", "3", "*"}), 9)
+	assert.Equal(t, leetcode.EvalRPN([]string{"4", "13", "5", "/", "+"}), 6)
+}
