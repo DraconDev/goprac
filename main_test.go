@@ -144,3 +144,8 @@ func TestEvalRPN(t *testing.T) {
 	// assert.Equal(t, leetcode.EvalRPN([]string{"2", "1", "+", "3", "*"}), 9)
 	assert.Equal(t, leetcode.EvalRPN([]string{"4", "13", "5", "/", "+"}), 6)
 }
+
+func TestLongestOnes(t *testing.T) {
+	assert.Equal(t, leetcode.LongestOnes([]int{1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0}, 2), 6)
+	assert.Equal(t, leetcode.LongestOnes([]int{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3), 10)
+}
