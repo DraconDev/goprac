@@ -160,3 +160,7 @@ func TestLongestSubarrayAfterDel(t *testing.T) {
 	assert.Equal(t, leetcode.LongestSubarrayAfterDel([]int{0, 1, 1, 1, 0, 1, 1, 0, 1}), 5)
 
 }
+
+func TestDailyTemperatures(t *testing.T) {
+	assert.Equal(t, leetcode.DailyTemperatures([]int{73, 74, 75, 71, 69, 72, 76, 73}), []int{1, 1, 4, 2, 1, 1, 0, 0})
+}
