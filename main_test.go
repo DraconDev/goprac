@@ -156,7 +156,7 @@ func TestGenerateParenthesis(t *testing.T) {
 
 func TestLongestSubarrayAfterDel(t *testing.T) {
 
-	assert.Equal(t, leetcode.LongestSubarrayAfterDel([]int{1, 1, 0, 1}), 3)
-	// assert.Equal(t, leetcode.LongestSubarrayAfterDel([]int{0, 1, 1, 1, 0, 1, 1, 0, 1}), 5)
+	// assert.Equal(t, leetcode.LongestSubarrayAfterDel([]int{1, 1, 0, 1}), 3)
+	assert.Equal(t, leetcode.LongestSubarrayAfterDel([]int{0, 1, 1, 1, 0, 1, 1, 0, 1}), 5)
 
 }
