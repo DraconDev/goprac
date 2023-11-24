@@ -164,3 +164,11 @@ func TestLongestSubarrayAfterDel(t *testing.T) {
 func TestDailyTemperatures(t *testing.T) {
 	assert.Equal(t, leetcode.DailyTemperatures([]int{73, 74, 75, 71, 69, 72, 76, 73}), []int{1, 1, 4, 2, 1, 1, 0, 0})
 }
+
+func TestCarFleet(t *testing.T) {
+
+	assert.Equal(t, leetcode.CarFleet(10, []int{0, 4, 2}, []int{2, 1, 3}), 1)
+	assert.Equal(t, leetcode.CarFleet(10, []int{2, 4}, []int{3, 2}), 1)
+	assert.Equal(t, leetcode.CarFleet(10, []int{6, 2, 17}, []int{3, 9, 2}), 2)
+	assert.Equal(t, leetcode.CarFleet(12, []int{10, 8, 0, 5, 3}, []int{2, 4, 1, 1, 3}), 3)
+}
