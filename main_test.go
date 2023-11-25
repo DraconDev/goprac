@@ -180,5 +180,8 @@ func TestPivotIndex(t *testing.T) {
 
 	assert.Equal(t, leetcode.PivotIndex([]int{2, 1, -1}), 0)
 
+}
 
+func TestLargestRectangleArea(t *testing.T) {
+	assert.Equal(t, leetcode.LargestRectangleArea([]int{2, 1, 5, 6, 2, 3}), 10)
 }
