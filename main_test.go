@@ -172,3 +172,13 @@ func TestCarFleet(t *testing.T) {
 	assert.Equal(t, leetcode.CarFleet(10, []int{6, 2, 17}, []int{3, 9, 2}), 2)
 	assert.Equal(t, leetcode.CarFleet(12, []int{10, 8, 0, 5, 3}, []int{2, 4, 1, 1, 3}), 3)
 }
+
+func TestPivotIndex(t *testing.T) {
+	// assert.Equal(t, leetcode.PivotIndex([]int{1, 7, 3, 6, 5, 6}), 3)
+	// assert.Equal(t, leetcode.PivotIndex([]int{1, 2, 3}), -1)
+	// assert.Equal(t, leetcode.PivotIndex([]int{-1, -1, -1, -1, -1, 0}), 2)
+
+	assert.Equal(t, leetcode.PivotIndex([]int{2, 1, -1}), 0)
+
+
+}
