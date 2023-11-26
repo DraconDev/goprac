@@ -134,7 +134,8 @@ func main() {
 	// fmt.Println(test)
 	// fmt.Println(test2)
 	// fmt.Println()
-	example.Generics_example()
+	// example.Generics_example()
+	example.Learn_errors()
 	// leetcode.TestMinStackConstructor()
 	// fmt.Println(testArr)
 
