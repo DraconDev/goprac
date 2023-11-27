@@ -189,3 +189,8 @@ func TestLargestRectangleArea(t *testing.T) {
 func TestFindDifference(t *testing.T) {
 	assert.Equal(t, leetcode.FindDifference([]int{1, 2, 3, 3}, []int{1, 2, 4}), [][]int{{3}, {4}})
 }
+
+func TestUniqueOccurrences(t *testing.T) {
+	assert.Equal(t, leetcode.UniqueOccurrences([]int{1, 2, 2, 1, 1, 3}), true)
+	assert.Equal(t, leetcode.UniqueOccurrences([]int{1, 2}), false)
+}
