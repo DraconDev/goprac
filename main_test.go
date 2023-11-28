@@ -194,3 +194,15 @@ func TestUniqueOccurrences(t *testing.T) {
 	assert.Equal(t, leetcode.UniqueOccurrences([]int{1, 2, 2, 1, 1, 3}), true)
 	assert.Equal(t, leetcode.UniqueOccurrences([]int{1, 2}), false)
 }
+
+func TestCloseStrings(t *testing.T) {
+	// assert.Equal(t, leetcode.CloseStrings("abc", "bca"), true)
+	// assert.Equal(t, leetcode.CloseStrings("a", "b"), false)
+
+	// // * test abbbzcf babzzcz
+	// assert.Equal(t, leetcode.CloseStrings("abbbzcf", "babzzcz"), false)
+
+	// * test aaabbbbccddeeeeefffff aaaaabbcccdddeeeeffff
+	assert.Equal(t, leetcode.CloseStrings("aaabbbbccddeeeeefffff", "aaaabbcccdddeeeeffff"), true)
+
+}
