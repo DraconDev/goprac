@@ -1,6 +1,6 @@
 package linkedList
 
-import "your.module.name~/types"
+import "goprac/types"
 
 func MiddleNode(head *types.ListNode) *types.ListNode {
 	length := 0

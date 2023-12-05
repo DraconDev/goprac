@@ -1,6 +1,6 @@
 package main
 
-import example "your.module.name~/go_by_example"
+import example "goprac/go_by_example"
 
 func main() {
 	// fmt.Println(runningSum([]int{1, 2, 3, 4}))
@@ -26,10 +26,10 @@ func main() {
 	// node5 := &ListNode{Val: 1, Next: node6}
 	// node4 := &ListNode{Val: -4, Next: node5}
 	// node3 := &ListNode{Val: -9, Next: node4}
-
-	// node1 := &ListNode{Val: 1, Next: nil}
 	// node2 := &ListNode{Val: -10, Next: node3}
 	// node1 := &ListNode{Val: -10, Next: node2}
+
+	// node1 := &ListNode{Val: 1, Next: nil}
 
 	// noded := &ListNode{Val: 44, Next: nil}
 	// nodec := &ListNode{Val: 4, Next: nil}

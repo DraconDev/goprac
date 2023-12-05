@@ -3,7 +3,7 @@ package tree
 import (
 	"math"
 
-	"your.module.name~/types"
+	"goprac/types"
 )
 
 func maxDepthOfBinaryTree(root *types.TreeNode) int {

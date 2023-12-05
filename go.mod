@@ -1,4 +1,4 @@
-module your.module.name~
+module goprac
 
 go 1.21
 
