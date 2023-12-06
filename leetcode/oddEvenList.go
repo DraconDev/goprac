@@ -3,6 +3,9 @@ package leetcode
 import "goprac/types"
 
 func OddEvenList(head *types.ListNode) *types.ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
 
 	evens := head.Next
 	odds := head
@@ -23,5 +26,4 @@ func OddEvenList(head *types.ListNode) *types.ListNode {
 	}
 	odds.Next = evensHead
 	return head
-
 }
