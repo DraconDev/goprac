@@ -226,3 +226,21 @@ func TestDeleteMiddle(t *testing.T) {
 	node1 := &types.ListNode{Val: 1, Next: node2}
 	assert.Equal(t, leetcode.DeleteMiddle(node1), node1)
 }
+
+func TestOddEvenList(t *testing.T) {
+	// * make 5 length pointers of type ListNode
+	// node6 := &types.ListNode{Val: 5, Next: nil}
+	// node5 := &types.ListNode{Val: 1, Next: node6}
+	// node4 := &types.ListNode{Val: -4, Next: node5}
+	// node3 := &types.ListNode{Val: -9, Next: node4}
+	// node2 := &types.ListNode{Val: -10, Next: node3}
+	// node1 := &types.ListNode{Val: -10, Next: node2}
+	node7 := &types.ListNode{Val: 7, Next: nil}
+	node6 := &types.ListNode{Val: 6, Next: node7}
+	node5 := &types.ListNode{Val: 5, Next: node6}
+	node4 := &types.ListNode{Val: 4, Next: node5}
+	node3 := &types.ListNode{Val: 3, Next: node4}
+	node2 := &types.ListNode{Val: 2, Next: node3}
+	node1 := &types.ListNode{Val: 1, Next: node2}
+	assert.Equal(t, leetcode.OddEvenList(node1), node1)
+}
