@@ -4,6 +4,7 @@ import (
 	"testing"
 
 	"goprac/leetcode"
+	"goprac/tree"
 	"goprac/types"
 
 	"github.com/stretchr/testify/assert"
@@ -243,4 +244,17 @@ func TestOddEvenList(t *testing.T) {
 	node2 := &types.ListNode{Val: 2, Next: node3}
 	node1 := &types.ListNode{Val: 1, Next: node2}
 	assert.Equal(t, leetcode.OddEvenList(node1), node1)
+}
+
+func TestBfsBinaryTree(t *testing.T) {
+	test := tree.BuildSampleTree()
+	assert.Equal(t, tree.BfsBinaryTree(test), []int{1, 2, 3, 4, 5, 6, 7})
+
+}
+
+func TestTree2str(t *testing.T) {
+	test := tree.BuildSampleTree()
+
+	assert.Equal(t, tree.Tree2str(test), "1(2(4)(5))(3(6)(7))")
+
 }
