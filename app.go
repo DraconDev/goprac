@@ -1,11 +1,9 @@
 package main
 
-import (
-	example "goprac/go_by_example"
-)
+import example "goprac/go_by_example"
 
 func main() {
-	example.Go_routines()
+	example.Channels()
 
 	// var test = 0
 	// fmt.Println(test)
