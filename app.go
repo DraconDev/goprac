@@ -1,9 +1,13 @@
 package main
 
-import example "goprac/go_by_example"
+import (
+	example "goprac/go_by_example"
+	"goprac/tree"
+)
 
 func main() {
 	example.Channels()
+	tree.InorderTraversal(tree.BuildSampleTree())
 
 	// var test = 0
 	// fmt.Println(test)

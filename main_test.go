@@ -258,3 +258,8 @@ func TestTree2str(t *testing.T) {
 	assert.Equal(t, tree.Tree2str(test), "1(2(4)(5))(3(6)(7))")
 
 }
+
+func TestInorderTraversal(t *testing.T) {
+	test := tree.BuildSampleTree()
+	assert.Equal(t, tree.InorderTraversal(test), []int{4, 2, 5, 1, 6, 3, 7})
+}
