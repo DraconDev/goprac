@@ -263,3 +263,8 @@ func TestInorderTraversal(t *testing.T) {
 	test := tree.BuildSampleTree()
 	assert.Equal(t, tree.InorderTraversal(test), []int{4, 2, 5, 1, 6, 3, 7})
 }
+
+func TestLearSimilar(t *testing.T) {
+	test := tree.BuildSampleTree()
+	assert.Equal(t, tree.LeafSimilar(test.Left, test.Right), true)
+}
