@@ -268,3 +268,8 @@ func TestLearSimilar(t *testing.T) {
 	test := tree.BuildSampleTree()
 	assert.Equal(t, tree.LeafSimilar(test.Left, test.Right), true)
 }
+
+func TestGoodNodes(t *testing.T) {
+	test := tree.BuildSampleTree()
+	assert.Equal(t, tree.GoodNodes(test), 7)
+}
