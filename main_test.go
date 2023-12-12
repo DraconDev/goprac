@@ -273,3 +273,8 @@ func TestGoodNodes(t *testing.T) {
 	test := tree.BuildSampleTree()
 	assert.Equal(t, tree.GoodNodes(test), 7)
 }
+
+func TestPathSum(t *testing.T) {
+	test := tree.BuildSampleTree()
+	assert.Equal(t, tree.PathSum(test, 7), 2)
+}
