@@ -1,11 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"goprac/leetcode"
 	"goprac/tree"
 	"goprac/types"
+	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -277,4 +276,10 @@ func TestGoodNodes(t *testing.T) {
 func TestPathSum(t *testing.T) {
 	test := tree.BuildSampleTree()
 	assert.Equal(t, tree.PathSum(test, 7), 2)
+}
+
+func TestDfsBinaryTree(t *testing.T) {
+	test := tree.BuildSampleTree()
+	assert.Equal(t, tree.DfsBinaryTree(test), []int{1, 2, 4, 5, 3, 6, 7})
+
 }

@@ -57,7 +57,22 @@ func BfsBinaryTree(root *TreeNode) []int {
 	return result
 }
 
-func dfsBinaryTree(root *TreeNode) []int {
+func dfsInOrder(root *TreeNode) []int {
+	var result []int
+	var inOrder func(node *TreeNode)
+	inOrder = func(node *TreeNode) {
+		if node == nil {
+			return
+		}
+		inOrder(node.Left)
+		result = append(result, node.Val)
+		inOrder(node.Right)
+	}
+	inOrder(root)
+	return result
+}
+
+func DfsBinaryTree(root *TreeNode) []int {
 	if root == nil {
 		return []int{}
 	}
@@ -86,5 +101,5 @@ func main() {
 
 	// Example of DFS traversal on a binary tree
 	fmt.Println("DFS Traversal:")
-	fmt.Println(dfsBinaryTree(tree))
+
 }
