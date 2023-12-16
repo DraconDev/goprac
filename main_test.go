@@ -283,3 +283,8 @@ func TestDfsBinaryTree(t *testing.T) {
 	assert.Equal(t, tree.DfsBinaryTree(test), []int{1, 2, 4, 5, 3, 6, 7})
 
 }
+func TestRightSideView(t *testing.T) {
+	test := tree.BuildSampleTree()
+	assert.Equal(t, tree.RightSideView(test), []int{1, 3, 7})
+	// [1,2,3,4]
+}
