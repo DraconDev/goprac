@@ -288,3 +288,9 @@ func TestRightSideView(t *testing.T) {
 	assert.Equal(t, tree.RightSideView(test), []int{1, 3, 7})
 	// [1,2,3,4]
 }
+
+func TestMaxLevelSum(t *testing.T) {
+	test := tree.BuildSampleTree()
+	assert.Equal(t, tree.MaxLevelSum(test), 3)
+	// [1,2,3,4]
+}
