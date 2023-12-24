@@ -1,6 +1,7 @@
 package main
 
 import (
+	example "goprac/go_by_example"
 	"goprac/leetcode"
 	linkedList "goprac/linkedlist"
 	"goprac/tree"
@@ -311,3 +312,12 @@ func TestConvertToTitle(t *testing.T) {
 	assert.Equal(t, leetcode.ConvertToTitle(28), "AB")
 	assert.Equal(t, leetcode.ConvertToTitle(701), "ZY")
 }
+
+// test doublechannel
+func TestDoubleChannel(t *testing.T) {
+
+	assert.Equal(t, example.Doublechannel(), 2)
+	assert.Equal(t, example.Doublechannel(), 4)
+	assert.Equal(t, example.Doublechannel(), 8)
+}
+
