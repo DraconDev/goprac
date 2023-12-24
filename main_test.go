@@ -303,3 +303,11 @@ func TestGetIntersectionNode(t *testing.T) {
 	assert.Equal(t, linkedList.GetIntersectionNode(test, test), test)
 
 }
+
+// test convertToTitle
+func TestConvertToTitle(t *testing.T) {
+
+	assert.Equal(t, leetcode.ConvertToTitle(1), "A")
+	assert.Equal(t, leetcode.ConvertToTitle(28), "AB")
+	assert.Equal(t, leetcode.ConvertToTitle(701), "ZY")
+}
