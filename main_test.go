@@ -2,6 +2,7 @@ package main
 
 import (
 	"goprac/leetcode"
+	linkedList "goprac/linkedlist"
 	"goprac/tree"
 	"goprac/types"
 	"testing"
@@ -293,4 +294,12 @@ func TestMaxLevelSum(t *testing.T) {
 	test := tree.BuildSampleTree()
 	assert.Equal(t, tree.MaxLevelSum(test), 3)
 	// [1,2,3,4]
+}
+
+// test getIntersectionNode
+func TestGetIntersectionNode(t *testing.T) {
+
+	test := linkedList.BuildLinkedList()
+	assert.Equal(t, linkedList.GetIntersectionNode(test, test), test)
+
 }
