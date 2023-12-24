@@ -4,7 +4,7 @@ import example "goprac/go_by_example"
 
 func main() {
 	// example.PrintChannels()
-	example.Timeouts()
+	example.ClosedChannel()
 	// example.Channels()
 	// tree.InorderTraversal(tree.BuildSampleTree())
 
