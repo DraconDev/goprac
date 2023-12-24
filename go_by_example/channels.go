@@ -140,3 +140,35 @@ func ClosedChannel() {
 	_, ok := <-jobs
 	fmt.Println("received more jobs:", ok)
 }
+
+func IterateChannel() {
+
+	queue := make(chan string, 2)
+	queue <- "one"
+	queue <- "two"
+	close(queue)
+
+	for elem := range queue {
+		fmt.Println(elem)
+	}
+}
+
+func Timers() {
+
+	timer1 := time.NewTimer(2 * time.Second)
+
+	<-timer1.C
+	fmt.Println("Timer 1 fired")
+
+	timer2 := time.NewTimer(time.Second)
+	go func() {
+		<-timer2.C
+		fmt.Println("Timer 2 fired")
+	}()
+	stop2 := timer2.Stop()
+	if stop2 {
+		fmt.Println("Timer 2 stopped")
+	}
+
+	time.Sleep(2 * time.Second)
+}
