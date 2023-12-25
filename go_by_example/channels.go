@@ -175,22 +175,51 @@ func Timers() {
 
 func Tickers() {
 
-    ticker := time.NewTicker(500 * time.Millisecond)
-    done := make(chan bool)
+	ticker := time.NewTicker(500 * time.Millisecond)
+	done := make(chan bool)
 
-    go func() {
-        for {
-            select {
-            case <-done:
-                return
-            case t := <-ticker.C:
-                fmt.Println("Tick at", t)
-            }
-        }
-    }()
+	go func() {
+		for {
+			select {
+			case <-done:
+				return
+			case t := <-ticker.C:
+				fmt.Println("Tick at", t)
+			}
+		}
+	}()
 
-    time.Sleep(1600 * time.Millisecond)
-    ticker.Stop()
-    done <- true
-    fmt.Println("Ticker stopped")
+	time.Sleep(1600 * time.Millisecond)
+	ticker.Stop()
+	done <- true
+	fmt.Println("Ticker stopped")
+}
+
+func worker(id int, jobs <-chan int, results chan<- int) {
+	for j := range jobs {
+		fmt.Println("worker", id, "started  job", j)
+		time.Sleep(time.Second)
+		fmt.Println("worker", id, "finished job", j)
+		results <- j * 2
+	}
+}
+
+func WaitGroups() {
+
+	const numJobs = 5
+	jobs := make(chan int, numJobs)
+	results := make(chan int, numJobs)
+
+	for w := 1; w <= 3; w++ {
+		go worker(w, jobs, results)
+	}
+
+	for j := 1; j <= numJobs; j++ {
+		jobs <- j
+	}
+	close(jobs)
+
+	for a := 1; a <= numJobs; a++ {
+		<-results
+	}
 }
