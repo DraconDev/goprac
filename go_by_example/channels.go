@@ -2,6 +2,7 @@ package example
 
 import (
 	"fmt"
+	"sync"
 	"time"
 )
 
@@ -210,7 +211,7 @@ func WaitGroups() {
 	jobs := make(chan int, numJobs)
 	results := make(chan int, numJobs)
 
-	for w := 1; w <= 3; w++ {
+	for w := 1; w <= 1; w++ {
 		go worker(w, jobs, results)
 	}
 
@@ -222,4 +223,30 @@ func WaitGroups() {
 	for a := 1; a <= numJobs; a++ {
 		<-results
 	}
+}
+
+func Workerw(id int) {
+	fmt.Printf("Worker %d starting\n", id)
+
+	time.Sleep(time.Second * 3)
+	fmt.Printf("Worker %d done\n", id)
+}
+
+func Waity() {
+
+	var wg sync.WaitGroup
+
+	for i := 1; i <= 5; i++ {
+		wg.Add(1)
+
+		i := i
+
+		go func() {
+			defer wg.Done()
+			Workerw(i)
+		}()
+	}
+
+	wg.Wait()
+
 }
