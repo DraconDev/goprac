@@ -1,14 +1,15 @@
 package main
 
 import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+
 	example "goprac/go_by_example"
 	"goprac/leetcode"
 	linkedList "goprac/linkedlist"
 	"goprac/tree"
 	"goprac/types"
-	"testing"
-
-	"github.com/stretchr/testify/assert"
 )
 
 func TestAnagram(t *testing.T) {
@@ -321,3 +322,13 @@ func TestDoubleChannel(t *testing.T) {
 	assert.Equal(t, example.Doublechannel(), 8)
 }
 
+// test time based key value
+func TestTimeBasedKeyValue(t *testing.T) {
+	var myMap = leetcode.Constructor()
+	myMap.Set("foo", "bar", 1)
+	assert.Equal(t, myMap.Get("foo", 1), "bar")
+	assert.Equal(t, myMap.Get("foo", 3), "bar")
+	myMap.Set("foo", "bar2", 4)
+	assert.Equal(t, myMap.Get("foo", 4), "bar2")
+	assert.Equal(t, myMap.Get("foo", 5), "bar2")
+}
