@@ -1,5 +1,7 @@
 package leetcode
 
+import "sort"
+
 type TimeMap struct {
 	m      map[string]map[int]string
 	stamps map[string][]int
@@ -46,5 +48,17 @@ func (time_map *TimeMap) Get(key string, timestamp int) string {
 		return time_map.m[key][time_map.stamps[key][left-1]]
 	} else {
 		return time_map.m[key][timestamp]
+	}
+}
+
+func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
+	nums1 = append(nums1, nums2...)
+
+	sort.Ints(nums1)
+
+	if len(nums1)%2 == 0 {
+		return float64(nums1[len(nums1)/2-1]+nums1[len(nums1)/2]) / 2
+	} else {
+		return float64(nums1[len(nums1)/2])
 	}
 }
