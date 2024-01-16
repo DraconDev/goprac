@@ -332,3 +332,17 @@ func TestTimeBasedKeyValue(t *testing.T) {
 	assert.Equal(t, myMap.Get("foo", 4), "bar2")
 	assert.Equal(t, myMap.Get("foo", 5), "bar2")
 }
+
+// test RandomizedSet
+func TestRandomizedSet(t *testing.T) {
+
+	randSet := leetcode.Const()
+	// ["RandomizedSet","insert","insert","remove","insert","remove","getRandom"] [[],[0],[1],[0],[2],[1],[]]
+	randSet.Insert(3)
+	randSet.Insert(4)
+	randSet.Remove(3)
+	// randSet.Insert(2)
+	// randSet.Remove(1)
+	randSet.GetRandom()
+
+}
