@@ -1,10 +1,11 @@
 package leetcode
 
 import (
-	"goprac/leetcode"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+
+	"goprac/leetcode"
 )
 
 func TestLengthOfLongestSubstring(t *testing.T) {
@@ -16,4 +17,10 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 	// assert.Equal(t, LengthOfLongestSubstring(" "), 1)
 	// assert.Equal(t, LengthOfLongestSubstring("dvdf"), 3)
 
+}
+
+func TestClimbStairs(t *testing.T) {
+	// assert.Equal(t, leetcode.ClimbStairs(2), 2)
+	assert.Equal(t, leetcode.ClimbStairs(3), 3)
+	assert.Equal(t, leetcode.ClimbStairs(4), 5)
 }
