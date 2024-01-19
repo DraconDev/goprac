@@ -24,3 +24,7 @@ func TestClimbStairs(t *testing.T) {
 	assert.Equal(t, leetcode.ClimbStairs(3), 3)
 	assert.Equal(t, leetcode.ClimbStairs(4), 5)
 }
+
+func TestMinFallingPathSum(t *testing.T) {
+	assert.Equal(t, leetcode.MinFallingPathSum([][]int{{2, 1, 3}, {6, 5, 4}, {7, 8, 9}}), 13)
+}
