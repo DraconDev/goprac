@@ -32,3 +32,11 @@ func TestMinFallingPathSum(t *testing.T) {
 func TestSumSubarrayMins(t *testing.T) {
 	assert.Equal(t, leetcode.SumSubarrayMins([]int{3, 1, 2, 4}), 17)
 }
+
+func TestCharacterReplacement(t *testing.T) {
+	assert.Equal(t, leetcode.CharacterReplacement("ABAA", 0), 4)
+}
+
+func TestMaximumStrongPairXor(t *testing.T) {
+	assert.Equal(t, leetcode.MaximumStrongPairXor([]int{1, 1, 2, 3, 5}), 6)
+}
