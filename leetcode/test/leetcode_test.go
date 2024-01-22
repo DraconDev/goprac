@@ -40,3 +40,7 @@ func TestCharacterReplacement(t *testing.T) {
 func TestMaximumStrongPairXor(t *testing.T) {
 	assert.Equal(t, leetcode.MaximumStrongPairXor([]int{1, 1, 2, 3, 5}), 6)
 }
+
+func TestFindErrorNums(t *testing.T) {
+	assert.Equal(t, leetcode.FindErrorNums([]int{1, 2, 2, 4}), []int{2, 3})
+}
