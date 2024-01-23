@@ -44,3 +44,12 @@ func TestMaximumStrongPairXor(t *testing.T) {
 func TestFindErrorNums(t *testing.T) {
 	assert.Equal(t, leetcode.FindErrorNums([]int{1, 2, 2, 4}), []int{2, 3})
 }
+
+func TestMaxLengthStringComb(t *testing.T) {
+
+	// ["cha","r","act","ers"]
+	assert.Equal(t, leetcode.MaxLength([]string{"cha", "r", "act", "ers"}), 6)
+
+	// assert.Equal(t, leetcode.MaxLengthStringComb([]string{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}), 26)
+
+}
