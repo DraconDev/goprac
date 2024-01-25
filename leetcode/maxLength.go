@@ -1,5 +1,7 @@
 package leetcode
 
+import "strings"
+
 func duplicates(s string) bool {
 	var (
 		m = make(map[rune]bool)
