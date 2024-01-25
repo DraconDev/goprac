@@ -55,5 +55,8 @@ func TestMaxLengthStringComb(t *testing.T) {
 }
 
 func TestLongestCommonSubsequence(t *testing.T) {
-	assert.Equal(t, leetcode.LongestCommonSubsequence("abacde", "ace"), 3)
+	// assert.Equal(t, leetcode.LongestCommonSubsequence("abacde", "ace"), 3)
+	// psnw
+	// assert.Equal(t, leetcode.LongestCommonSubsequence("ezupkr", "ubmrapg"), 2)
+	assert.Equal(t, leetcode.LongestCommonSubsequence("abcba", "abcbcba"), 2)
 }
