@@ -6,6 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"goprac/leetcode"
+	"goprac/tree"
 )
 
 func TestLengthOfLongestSubstring(t *testing.T) {
@@ -59,4 +60,8 @@ func TestLongestCommonSubsequence(t *testing.T) {
 	// psnw
 	// assert.Equal(t, leetcode.LongestCommonSubsequence("ezupkr", "ubmrapg"), 2)
 	assert.Equal(t, leetcode.LongestCommonSubsequence("abcba", "abcbcba"), 2)
+}
+
+func TestInvertTree(t *testing.T) {
+	assert.Equal(t, tree.InvertTree(tree.BuildSampleTree()), tree.BuildSampleTree())
 }
