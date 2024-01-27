@@ -65,3 +65,8 @@ func TestLongestCommonSubsequence(t *testing.T) {
 func TestInvertTree(t *testing.T) {
 	assert.Equal(t, tree.InvertTree(tree.BuildSampleTree()), tree.BuildSampleTree())
 }
+
+func TestCheckInclusion(t *testing.T) {
+	// assert.Equal(t, leetcode.CheckInclusion("ab", "eidboaoo"), true)
+	assert.Equal(t, leetcode.CheckInclusion("adc", "dcda"), true)
+}
