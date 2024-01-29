@@ -324,7 +324,7 @@ func TestDoubleChannel(t *testing.T) {
 
 // test time based key value
 func TestTimeBasedKeyValue(t *testing.T) {
-	var myMap = leetcode.Constructor()
+	var myMap = leetcode.Constructor2()
 	myMap.Set("foo", "bar", 1)
 	assert.Equal(t, myMap.Get("foo", 1), "bar")
 	assert.Equal(t, myMap.Get("foo", 3), "bar")

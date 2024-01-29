@@ -70,3 +70,13 @@ func TestCheckInclusion(t *testing.T) {
 	// assert.Equal(t, leetcode.CheckInclusion("ab", "eidboaoo"), true)
 	assert.Equal(t, leetcode.CheckInclusion("adc", "dcda"), true)
 }
+
+func TestMyQueue(t *testing.T) {
+	q := leetcode.MyQueue{}
+	q.Push(1)
+	// q.Push(2)
+	assert.Equal(t, q.Pop(), 1)
+	// assert.Equal(t, q.Pop(), 2)
+	assert.Equal(t, q.Empty(), true)
+	// assert.Equal(t, q.Peek(), 0)
+}

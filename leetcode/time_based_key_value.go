@@ -7,7 +7,7 @@ type TimeMap struct {
 	stamps map[string][]int
 }
 
-func Constructor() TimeMap {
+func Constructor2() TimeMap {
 	return TimeMap{m: make(map[string]map[int]string), stamps: make(map[string][]int)}
 
 }
