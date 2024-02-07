@@ -1,5 +1,7 @@
 package leetcode
 
+import "strings"
+
 func FrequencySort(s string) string {
 
 	length := 0
@@ -16,14 +18,12 @@ func FrequencySort(s string) string {
 		reverse[v] = append(reverse[v], k)
 	}
 
-	result := ""
+	var result strings.Builder
 	for i := length; i > 0; i-- {
 		for _, v := range reverse[i] {
-			for j := 0; j < i; j++ {
-				result += string(v)
-			}
+			result.WriteString(strings.Repeat(string(v), i))
 		}
 	}
 
-	return result
+	return result.String()
 }
