@@ -1,29 +1,27 @@
 package leetcode
 
-import "sort"
-
 func missingNumber(nums []int) int {
-	sort.Ints(nums)
+	// 	sort.Ints(nums)
 
-	for i, v := range nums {
-		if v != i {
+	// 	for i, v := range nums {
+	// 		if v != i {
+	// 			return i
+	// 		}
+	// 	}
+	// 	return nums[len(nums)-1] + 1
+	// }
+
+	dict := make([]bool, len(nums)+1)
+
+	for _, n := range nums {
+		dict[n] = true
+	}
+
+	for i, exists := range dict {
+		if !exists {
 			return i
 		}
 	}
-	return nums[len(nums)-1] + 1
+
+	return 0
 }
-
-// 	dict := make([]bool, len(nums)+1)
-
-// 	for _, n := range nums {
-// 		dict[n] = true
-// 	}
-
-// 	for i, exists := range dict {
-// 		if !exists {
-// 			return i
-// 		}
-// 	}
-
-// 	return 0
-// }
