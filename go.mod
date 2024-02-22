@@ -1,6 +1,6 @@
 module goprac
 
-go 1.21
+go 1.22
 
 require golang.org/x/text v0.13.0
 
