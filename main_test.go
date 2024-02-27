@@ -8,7 +8,8 @@ import (
 	example "goprac/go_by_example"
 	"goprac/leetcode"
 	linkedList "goprac/linkedlist"
-	"goprac/tree"
+	"goprac/tests/leetcode/tree"
+
 	"goprac/types"
 )
 
