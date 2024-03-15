@@ -1,25 +1,25 @@
 package leetcode
 
-func NumSubarraysWithSum(nums []int, goal int) int {
+// func NumSubarraysWithSum(nums []int, goal int) int {
 
-	var sum int
-	var curSum int
+// 	var sum int
+// 	var curSum int
 
-	for i := range nums {
-		for _, v2 := range nums[i:] {
-			curSum += v2
-			if curSum == goal {
-				sum++
-			} else if curSum > goal {
-				break
-			}
-		}
-		curSum = 0
-	}
+// 	for i := range nums {
+// 		for _, v2 := range nums[i:] {
+// 			curSum += v2
+// 			if curSum == goal {
+// 				sum++
+// 			} else if curSum > goal {
+// 				break
+// 			}
+// 		}
+// 		curSum = 0
+// 	}
 
-	return sum
+// 	return sum
 
-}
+// }
 
 func sumAtMost(nums []int, goal int) int {
 	if goal < 0 {
@@ -39,6 +39,6 @@ func sumAtMost(nums []int, goal int) int {
 	return res
 }
 
-func numSubarraysWithSum(nums []int, goal int) int {
+func NumSubarraysWithSum(nums []int, goal int) int {
 	return sumAtMost(nums, goal) - sumAtMost(nums, goal-1)
 }
