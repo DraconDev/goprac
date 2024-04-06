@@ -17,7 +17,7 @@ func makeGood(s string) string {
 
 }
 
-func abs(x int) int {
+func abs2(x int) int {
 	if x < 0 {
 		return -x
 	}
