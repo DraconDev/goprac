@@ -1,4 +1,4 @@
-// package tree_test
+package tree_test
 
 // import (
 // 	"goprac/tests/leetcode/tree"
