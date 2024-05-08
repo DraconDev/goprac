@@ -1,6 +1,6 @@
 package tree
 
-func isSameTree(p *TreeNode, q *TreeNode) bool {
+func iisSameTree(p *TreeNode, q *TreeNode) bool {
 
 	var dfs func(p *TreeNode, q *TreeNode) bool
 	dfs = func(p *TreeNode, q *TreeNode) bool {
