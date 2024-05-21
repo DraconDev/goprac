@@ -1,6 +1,6 @@
 package leetcode
 
-func subsets(nums []int) [][]int {
+func Subsets(nums []int) [][]int {
 	subsets := [][]int{{}}
 	for _, num := range nums {
 		for _, subset := range subsets {
