@@ -1,4 +1,4 @@
-package linkedList
+package linkedlist
 
 func MergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	if list1 == nil {

@@ -1,4 +1,4 @@
-package linkedList
+package linkedlist
 
 func GetIntersectionNode(headA, headB *ListNode) *ListNode {
 	var array1, array2 []*ListNode

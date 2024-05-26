@@ -1,10 +1,10 @@
 package linkedlist_test
 
 import (
-	linkedList "goprac/linkedlist"
+	linkedlist "goprac/linkedlist"
 	"testing"
 )
 
 func TestRemoveZeroSumSublists(t *testing.T) {
-	linkedList.RemoveZeroSumSublists(linkedList.BuildLinkedList())
+	linkedlist.RemoveZeroSumSublists(linkedlist.Buildlinkedlist())
 }

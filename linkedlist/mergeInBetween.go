@@ -1,4 +1,4 @@
-package linkedList
+package linkedlist
 
 func MergeInBetween(list1 *ListNode, a int, b int, list2 *ListNode) *ListNode {
 	node := list1

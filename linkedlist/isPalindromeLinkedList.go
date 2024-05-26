@@ -1,4 +1,4 @@
-package linkedList
+package linkedlist
 
 func IsPalindromeLinked(head *ListNode) bool {
 	test := []int{}

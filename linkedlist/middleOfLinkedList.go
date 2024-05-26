@@ -1,4 +1,4 @@
-package linkedList
+package linkedlist
 
 func middleLinked(head *ListNode) *ListNode {
 	slow, fast := head, head

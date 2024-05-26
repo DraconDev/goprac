@@ -1,4 +1,4 @@
-package linkedList
+package linkedlist
 
 // func RemoveZeroSumSublists(head *ListNode) *ListNode {
 

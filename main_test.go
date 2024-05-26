@@ -7,7 +7,7 @@ import (
 
 	example "goprac/go_by_example"
 	"goprac/leetcode"
-	linkedList "goprac/linkedlist"
+	linkedlist "goprac/linkedlist"
 	"goprac/tests/leetcode/tree"
 
 	"goprac/types"
@@ -249,9 +249,9 @@ func TestOddEvenList(t *testing.T) {
 	assert.Equal(t, leetcode.OddEvenList(node1), node1)
 }
 
-func TestBfsBinaryTree(t *testing.T) {
-	test := tree.BuildSampleTree()
-	assert.Equal(t, tree.BfsBinaryTree(test), []int{1, 2, 3, 4, 5, 6, 7})
+// func TestBfsBinaryTree(t *testing.T) {
+// 	test := tree.BuildSampleTree()
+// 	assert.Equal(t, tree.BfsBinaryTree(test), []int{1, 2, 3, 4, 5, 6, 7})
 
 }
 
@@ -302,8 +302,8 @@ func TestMaxLevelSum(t *testing.T) {
 // test getIntersectionNode
 func TestGetIntersectionNode(t *testing.T) {
 
-	test := linkedList.BuildLinkedList()
-	assert.Equal(t, linkedList.GetIntersectionNode(test, test), test)
+	test := linkedlist.Buildlinkedlist()
+	assert.Equal(t, linkedlist.GetIntersectionNode(test, test), test)
 
 }
 

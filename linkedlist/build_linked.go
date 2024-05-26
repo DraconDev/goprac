@@ -1,6 +1,6 @@
-package linkedList
+package linkedlist
 
-func BuildLinkedList() *ListNode {
+func Buildlinkedlist() *ListNode {
 	head := &ListNode{Val: 1}
 	head.Next = &ListNode{Val: 2}
 	head.Next.Next = &ListNode{Val: -3}

@@ -1,4 +1,4 @@
-package linkedList
+package linkedlist
 
 func DeleteNode(node *ListNode) {
 	node.Val = node.Next.Val

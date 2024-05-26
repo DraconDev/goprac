@@ -1,4 +1,4 @@
-package linkedList
+package linkedlist
 
 func HasCycle(head *ListNode) bool {
 	if head == nil || head.Next == nil {
