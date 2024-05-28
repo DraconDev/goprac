@@ -1,26 +1,25 @@
 package leetcode
 
 func validPalindrome(s string) bool {
-
-	if IsPalind(s) {
-		return true
-	}
-	elem := s
-	for i, _ := range s {
-		elem = s[:i] + s[i+1:]
-		if IsPalind(elem) {
-			return true
+	left, right := 0, len(s)-1
+	for left < right {
+		if s[left] != s[right] {
+			// Check the two substrings resulting from skipping one of the mismatched characters
+			return isPalind(s, left+1, right) || isPalind(s, left, right-1)
 		}
+		left++
+		right--
 	}
-	return false
+	return true
 }
 
-func IsPalind(s string) bool {
-
-	for i := 0; i < len(s)/2; i++ {
-		if s[i] != s[len(s)-1-i] {
+func isPalind(s string, left, right int) bool {
+	for left < right {
+		if s[left] != s[right] {
 			return false
 		}
+		left++
+		right--
 	}
 	return true
 }
