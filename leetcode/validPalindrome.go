@@ -4,7 +4,6 @@ func validPalindrome(s string) bool {
 	left, right := 0, len(s)-1
 	for left < right {
 		if s[left] != s[right] {
-			// Check the two substrings resulting from skipping one of the mismatched characters
 			return isPalind(s, left+1, right) || isPalind(s, left, right-1)
 		}
 		left++
