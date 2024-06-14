@@ -36,10 +36,14 @@ func MinIncrementForUnique(nums []int) int {
 		return increments
 	}
 
-	for i := range nums[1:] {
-		for nums[i+1] <= nums[i] {
-			nums[i+1]++
-			increments++
+	curHigh := nums[0]
+
+	for i := 1; i < len(nums); i++ {
+		if nums[i] <= curHigh {
+			increments += curHigh - nums[i] + 1
+			curHigh = curHigh + 1
+		} else {
+			curHigh = nums[i]
 		}
 	}
 
