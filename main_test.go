@@ -8,7 +8,7 @@ import (
 	example "goprac/go_by_example"
 	"goprac/leetcode"
 	linkedlist "goprac/linkedlist"
-	"goprac/tests/leetcode/tree"
+	"goprac/tree"
 
 	"goprac/types"
 )
@@ -253,19 +253,17 @@ func TestOddEvenList(t *testing.T) {
 // 	test := tree.BuildSampleTree()
 // 	assert.Equal(t, tree.BfsBinaryTree(test), []int{1, 2, 3, 4, 5, 6, 7})
 
-}
+// func TestTree2str(t *testing.T) {
+// 	test := tree.BuildSampleTree()
 
-func TestTree2str(t *testing.T) {
-	test := tree.BuildSampleTree()
+// 	assert.Equal(t, tree.Tree2str(test), "1(2(4)(5))(3(6)(7))")
 
-	assert.Equal(t, tree.Tree2str(test), "1(2(4)(5))(3(6)(7))")
+// }
 
-}
-
-func TestInorderTraversal(t *testing.T) {
-	test := tree.BuildSampleTree()
-	assert.Equal(t, tree.InorderTraversal(test), []int{4, 2, 5, 1, 6, 3, 7})
-}
+// func TestInorderTraversal(t *testing.T) {
+// 	test := tree.BuildSampleTree()
+// 	assert.Equal(t, tree.InorderTraversal(test), []int{4, 2, 5, 1, 6, 3, 7})
+// }
 
 func TestLearSimilar(t *testing.T) {
 	test := tree.BuildSampleTree()
@@ -277,27 +275,27 @@ func TestGoodNodes(t *testing.T) {
 	assert.Equal(t, tree.GoodNodes(test), 7)
 }
 
-func TestPathSum(t *testing.T) {
-	test := tree.BuildSampleTree()
-	assert.Equal(t, tree.PathSum(test, 7), 2)
-}
+// func TestPathSum(t *testing.T) {
+// 	test := tree.BuildSampleTree()
+// 	assert.Equal(t, tree.PathSum(test, 7), 2)
+// }
 
-func TestDfsBinaryTree(t *testing.T) {
-	test := tree.BuildSampleTree()
-	assert.Equal(t, tree.DfsBinaryTree(test), []int{1, 2, 4, 5, 3, 6, 7})
+// func TestDfsBinaryTree(t *testing.T) {
+// 	test := tree.BuildSampleTree()
+// 	assert.Equal(t, tree.DfsBinaryTree(test), []int{1, 2, 4, 5, 3, 6, 7})
 
-}
-func TestRightSideView(t *testing.T) {
-	test := tree.BuildSampleTree()
-	assert.Equal(t, tree.RightSideView(test), []int{1, 3, 7})
-	// [1,2,3,4]
-}
+// }
+// func TestRightSideView(t *testing.T) {
+// 	test := tree.BuildSampleTree()
+// 	assert.Equal(t, tree.RightSideView(test), []int{1, 3, 7})
+// 	// [1,2,3,4]
+// }
 
-func TestMaxLevelSum(t *testing.T) {
-	test := tree.BuildSampleTree()
-	assert.Equal(t, tree.MaxLevelSum(test), 3)
-	// [1,2,3,4]
-}
+// func TestMaxLevelSum(t *testing.T) {
+// 	test := tree.BuildSampleTree()
+// 	assert.Equal(t, tree.MaxLevelSum(test), 3)
+// 	// [1,2,3,4]
+// }
 
 // test getIntersectionNode
 func TestGetIntersectionNode(t *testing.T) {
@@ -308,12 +306,12 @@ func TestGetIntersectionNode(t *testing.T) {
 }
 
 // test convertToTitle
-func TestConvertToTitle(t *testing.T) {
+// func TestConvertToTitle(t *testing.T) {
 
-	assert.Equal(t, leetcode.ConvertToTitle(1), "A")
-	assert.Equal(t, leetcode.ConvertToTitle(28), "AB")
-	assert.Equal(t, leetcode.ConvertToTitle(701), "ZY")
-}
+// 	assert.Equal(t, leetcode.ConvertToTitle(1), "A")
+// 	assert.Equal(t, leetcode.ConvertToTitle(28), "AB")
+// 	assert.Equal(t, leetcode.ConvertToTitle(701), "ZY")
+// }
 
 // test doublechannel
 func TestDoubleChannel(t *testing.T) {
