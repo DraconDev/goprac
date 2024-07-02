@@ -16,7 +16,7 @@ func TestDivideArray(t *testing.T) {
 	leetcode.DivideArray([]int{1, 3, 4, 8, 7, 9, 3, 5, 1}, 2)
 }
 
-func TestSequentialDigits(t *testing.T) {
-	// fmt.Println(leetcode.SequentialDigits(1000, 13000), []int{1234, 2345, 3456, 4567, 5678, 6789, 12345})
-	fmt.Println(leetcode.SequentialDigits(10, 1000000000), []int{1234, 2345, 3456, 4567, 5678, 6789, 12345})
-}
+// func TestSequentialDigits(t *testing.T) {
+// 	// fmt.Println(leetcode.SequentialDigits(1000, 13000), []int{1234, 2345, 3456, 4567, 5678, 6789, 12345})
+// 	fmt.Println(leetcode.SequentialDigits(10, 1000000000), []int{1234, 2345, 3456, 4567, 5678, 6789, 12345})
+// }
