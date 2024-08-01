@@ -10,5 +10,4 @@ func countSeniors(details []string) int {
 		}
 	}
 	return old
-
 }
