@@ -11,7 +11,7 @@ func main() {
 	// var test = 0
 	// fmt.Println(test)
 
-}<
+}
 
 // example.Learn_errors()
 // fmt.Println(runningSum([]int{1, 2, 3, 4}))
