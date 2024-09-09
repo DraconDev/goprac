@@ -9,6 +9,7 @@ func numPrimeArrangements(n int) int {
 			noPrime++
 		}
 	}
+	
 	answer := 1
 	for i := 2; i <= prime; i++ {
 		answer *= i
